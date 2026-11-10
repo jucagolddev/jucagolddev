@@ -123,9 +123,9 @@
     <text x="0" y="15" fill="#64748b" class="matrix-meta">KERNEL v4.9.2 • REAL-TIME SYNAPSE LOAD BENCHMARK</text>
 
     <!-- Right Header Badges -->
-    <polygon points="730,-12 856,-12 864,4 738,4" fill="#141732" stroke="#00f0ff" stroke-width="1" />
-    <circle cx="745" cy="-4" r="3" fill="#00ff66" class="pulse-glow" />
-    <text x="754" y="-1" fill="#00ff66" class="matrix-meta">SYNC: 99.4% [STABLE]</text>
+    <polygon points="706,-12 866,-12 874,4 714,4" fill="#141732" stroke="#00f0ff" stroke-width="1" />
+    <circle cx="722" cy="-4" r="3" fill="#00ff66" class="pulse-glow" />
+    <text x="732" y="-1" fill="#00ff66" class="matrix-meta">SYNC: 99.4% [STABLE]</text>
   </g>
 
   <!-- Horizontal Tech Separator -->
