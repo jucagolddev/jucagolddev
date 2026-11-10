@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 140" width="100%" height="140">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05050b" />
+      <stop offset="50%" stop-color="#090a14" />
+      <stop offset="100%" stop-color="#0e1020" />
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Caution Diagonal Stripes -->
+    <pattern id="diagCaution" width="12" height="12" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#fcee0a" stroke-width="3" stroke-opacity="0.8" />
+      <line x1="6" y1="0" x2="6" y2="12" stroke="#05050b" stroke-width="3" stroke-opacity="0.8" />
+    </pattern>
+
+    <pattern id="cardGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#00f0ff" stroke-width="0.5" stroke-opacity="0.08" />
+    </pattern>
+  </defs>
+
+  <style>
+    .mono-bold {
+      font-family: 'Fira Code', 'Courier New', monospace;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+    .mono-regular {
+      font-family: 'Fira Code', 'Courier New', monospace;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+    .val-accent {
+      font-family: 'Orbitron', 'Rajdhani', 'Fira Code', monospace;
+      font-weight: 900;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+    .pulse-dot {
+      animation: pulseDot 2s infinite ease-in-out;
+    }
+    @keyframes pulseDot {
+      0% { opacity: 0.3; r: 3; }
+      50% { opacity: 1; r: 4.5; }
+      100% { opacity: 0.3; r: 3; }
+    }
+  </style>
+
+  <!-- Container Box with Chamfered Corners -->
+  <polygon points="20,4 880,4 896,20 896,120 880,136 20,136 4,120 4,20" fill="url(#cardBg)" stroke="#00f0ff" stroke-width="1.2" stroke-opacity="0.4" />
+  
+  <!-- Subtle Grid -->
+  <polygon points="20,4 880,4 896,20 896,120 880,136 20,136 4,120 4,20" fill="url(#cardGrid)" />
+
+  <!-- Left Caution Stripe Accent -->
+  <polygon points="4,20 4,45 12,37 12,20" fill="url(#diagCaution)" />
+
+  <!-- Top HUD Header Bar -->
+  <g transform="translate(24, 26)">
+    <!-- Yellow Status Pill -->
+    <polygon points="0,-12 180,-12 192,10 0,10" fill="#fcee0a" />
+    <circle cx="14" cy="-1" r="3.5" fill="#05050b" />
+    <text x="24" y="3" fill="#05050b" class="mono-bold" font-size="11">LIVE_TELEMETRY // V2.4</text>
+
+    <!-- Center Status Indicator -->
+    <text x="210" y="2" fill="#00f0ff" class="mono-bold" font-size="11">
+      NETRUNNER_STATUS: <tspan fill="#ff0055">DEEP_FOCUS [ANGULAR &amp; SIGNALS]</tspan>
+    </text>
+
+    <!-- Right Live Ping -->
+    <circle cx="848" cy="-1" r="4" fill="#00ff66" class="pulse-dot" />
+    <text x="838" y="2" text-anchor="end" fill="#00ff66" class="mono-bold" font-size="10">PULSE: ACTIVE</text>
+  </g>
+
+  <!-- Bottom Data Grid / Live Stats Metrics -->
+  <g transform="translate(30, 80)">
+    <!-- Metric 1: Public Repos -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="0" fill="#94a3b8" class="mono-regular" font-size="10">REPOSITORIOS</text>
+      <text x="0" y="25" fill="#00f0ff" class="val-accent">12</text>
+      <text x="50" y="25" fill="#475569" class="mono-regular" font-size="10">// REPOS</text>
+    </g>
+
+    <!-- Metric 2: Stars -->
+    <g transform="translate(160, 0)">
+      <text x="0" y="0" fill="#94a3b8" class="mono-regular" font-size="10">ESTRELLAS GITHUB</text>
+      <text x="0" y="25" fill="#fcee0a" class="val-accent">0</text>
+      <text x="35" y="25" fill="#475569" class="mono-regular" font-size="10">// STARS</text>
+    </g>
+
+    <!-- Metric 3: Followers -->
+    <g transform="translate(320, 0)">
+      <text x="0" y="0" fill="#94a3b8" class="mono-regular" font-size="10">NETWORK FOLLOWERS</text>
+      <text x="0" y="25" fill="#ff0055" class="val-accent">8</text>
+      <text x="35" y="25" fill="#475569" class="mono-regular" font-size="10">// PEERS</text>
+    </g>
+
+    <!-- Metric 4: Runtime / Base -->
+    <g transform="translate(480, 0)">
+      <text x="0" y="0" fill="#94a3b8" class="mono-regular" font-size="10">RUNTIME &amp; LOCATION</text>
+      <text x="0" y="16" fill="#cbd5e1" class="mono-bold" font-size="11">NODE.JS // SEVILLA.ES</text>
+      <text x="0" y="32" fill="#64748b" class="mono-regular" font-size="9">PING: 10/11/2026, 12:36 CET</text>
+    </g>
+  </g>
+
+  <!-- Realtime Oscilloscope Waveform (Generated dynamically via JS) -->
+  <g>
+    <!-- Scope label -->
+    <text x="660" y="55" fill="#475569" class="mono-regular" font-size="9">// OSCILLOSCOPE_STREAM</text>
+    <!-- Scope line -->
+    <path d="M 660.0 78.5 L 666.7 79.0 L 673.3 80.6 L 680.0 80.2 L 686.7 82.0 L 693.3 78.7 L 700.0 78.6 L 706.7 80.7 L 713.3 81.0 L 720.0 90.3 L 726.7 94.1 L 733.3 96.0 L 740.0 87.8 L 746.7 76.0 L 753.3 65.2 L 760.0 62.3 L 766.7 65.4 L 773.3 76.0 L 780.0 87.9 L 786.7 96.7 L 793.3 94.9 L 800.0 88.9 L 806.7 81.4 L 813.3 78.4 L 820.0 81.8 L 826.7 78.8 L 833.3 78.4 L 840.0 80.4 L 846.7 81.6 L 853.3 80.4 L 860.0 79.3" fill="none" stroke="#00f0ff" stroke-width="1.8" filter="url(#neonGlow)" />
+  </g>
+
+  <!-- Flanking Tech Corner Accents -->
+  <g stroke="#ff0055" stroke-width="1.5" fill="none">
+    <path d="M 8 35 L 8 16 L 27 16" />
+    <path d="M 892 105 L 892 124 L 873 124" />
+  </g>
+</svg>

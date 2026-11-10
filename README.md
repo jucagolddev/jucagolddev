@@ -154,6 +154,10 @@
 <!-- =================================================================== -->
 <img src="./assets/headers/header-telemetry.svg" width="100%" alt="Telemetría y Rendimiento" />
 
+<p align="center">
+  <img src="./assets/cyber-status.svg" width="100%" alt="Cyber Telemetry Live Node.js Feed" />
+</p>
+
 <div align="center">
   <!-- TARJETAS DE STATS Y TOP LANGUAGES EN ALTA VELOCIDAD -->
   <table border="0" cellpadding="0" cellspacing="0">
