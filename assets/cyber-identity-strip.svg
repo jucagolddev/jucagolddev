@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 80" width="100%" height="80">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="stripBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05060f" />
+      <stop offset="50%" stop-color="#090b1c" />
+      <stop offset="100%" stop-color="#0e1026" />
+    </linearGradient>
+
+    <!-- Glowing Border Gradient -->
+    <linearGradient id="stripBorderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#7928ca" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#ff0055" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Tech Grid Pattern -->
+    <pattern id="stripGrid" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#00f0ff" stroke-width="0.5" stroke-opacity="0.05" />
+    </pattern>
+
+    <!-- Caution Stripes -->
+    <pattern id="stripCaution" width="10" height="10" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#fcee0a" stroke-width="2.5" stroke-opacity="0.8" />
+      <line x1="5" y1="0" x2="5" y2="10" stroke="#05060f" stroke-width="2.5" stroke-opacity="0.8" />
+    </pattern>
+  </defs>
+
+  <style>
+    .strip-primary {
+      font-family: 'Century Gothic', 'Trebuchet MS', 'Segoe UI', system-ui, sans-serif;
+      font-weight: 900;
+      font-size: 14.5px;
+      letter-spacing: 2px;
+      fill: #ffffff;
+    }
+    .strip-mono {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+    }
+    .pulse-dot-strip {
+      animation: pulseStrip 1.8s infinite ease-in-out;
+    }
+    @keyframes pulseStrip {
+      0% { opacity: 0.3; }
+      50% { opacity: 1; }
+      100% { opacity: 0.3; }
+    }
+  </style>
+
+  <!-- Container Box with Chamfered Corners -->
+  <polygon points="14,4 886,4 896,14 896,66 886,76 14,76 4,66 4,14" fill="url(#stripBg)" stroke="url(#stripBorderGrad)" stroke-width="1.3" />
+
+  <!-- Inner Tech Grid -->
+  <polygon points="14,4 886,4 896,14 896,66 886,76 14,76 4,66 4,14" fill="url(#stripGrid)" />
+
+  <!-- Left Caution Decal -->
+  <polygon points="4,14 4,38 12,30 12,14" fill="url(#stripCaution)" />
+
+  <!-- Corner Sci-Fi Brackets -->
+  <g stroke="#00f0ff" stroke-width="1.2" fill="none" opacity="0.6">
+    <path d="M 890 12 L 890 20 L 882 20" />
+    <path d="M 10 68 L 10 60 L 18 60" />
+  </g>
+
+  <!-- Left Content: Role & Degree -->
+  <g transform="translate(24, 34)">
+    <text x="0" y="0" class="strip-primary">
+      <tspan fill="#00f0ff">&gt;_</tspan> DESARROLLADOR WEB <tspan fill="#ff0055">&amp;</tspan> ESTUDIANTE DE 1º INGENIERÍA INFORMÁTICA
+    </text>
+    <text x="0" y="22" class="strip-mono">
+      <tspan fill="#fcee0a">SPECIALTY:</tspan> <tspan fill="#cbd5e1">Angular 19+ Reactive</tspan>
+      <tspan fill="#64748b"> • </tspan>
+      <tspan fill="#00f0ff">LOCATION:</tspan> <tspan fill="#cbd5e1">Sevilla, España</tspan>
+      <tspan fill="#64748b"> • </tspan>
+      <tspan fill="#ff0055">ENV:</tspan> <tspan fill="#cbd5e1">Clean Architecture</tspan>
+    </text>
+  </g>
+
+  <!-- Right Status Badge -->
+  <g transform="translate(710, 24)">
+    <polygon points="0,0 162,0 170,32 8,32" fill="#0d1b2a" stroke="#00ff66" stroke-width="1" />
+    <circle cx="22" cy="16" r="3.5" fill="#00ff66" class="pulse-dot-strip" />
+    <text x="32" y="19.5" fill="#00ff66" class="strip-mono">SYS_STATUS: OPTIMAL</text>
+  </g>
+</svg>

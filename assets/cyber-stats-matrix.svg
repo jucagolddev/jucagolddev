@@ -1,0 +1,262 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="100%" height="280">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="statsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05060f" />
+      <stop offset="50%" stop-color="#090b1c" />
+      <stop offset="100%" stop-color="#0e1026" />
+    </linearGradient>
+
+    <!-- Glowing Outer Border Gradient -->
+    <linearGradient id="statsBorderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff0055" stop-opacity="0.9" />
+      <stop offset="35%" stop-color="#7928ca" stop-opacity="0.7" />
+      <stop offset="70%" stop-color="#00f0ff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#fcee0a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Inner Pod Gradient -->
+    <linearGradient id="statsPodBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d1026" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#070814" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Bar Gradients -->
+    <linearGradient id="barTsGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00a8ff" />
+      <stop offset="100%" stop-color="#00f0ff" />
+    </linearGradient>
+
+    <linearGradient id="barJsGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#fcee0a" />
+    </linearGradient>
+
+    <linearGradient id="barScssGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c026d3" />
+      <stop offset="100%" stop-color="#ff0055" />
+    </linearGradient>
+
+    <linearGradient id="barHtmlGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#fb923c" />
+    </linearGradient>
+
+    <!-- Tech Grid Pattern -->
+    <pattern id="statsGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#00f0ff" stroke-width="0.5" stroke-opacity="0.05" />
+    </pattern>
+
+    <!-- Caution Stripes -->
+    <pattern id="statsCaution" width="10" height="10" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#fcee0a" stroke-width="2.5" stroke-opacity="0.8" />
+      <line x1="5" y1="0" x2="5" y2="10" stroke="#05060f" stroke-width="2.5" stroke-opacity="0.8" />
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="statsGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .stats-title {
+      font-family: 'Century Gothic', 'Trebuchet MS', 'Segoe UI', system-ui, sans-serif;
+      font-weight: 900;
+      font-size: 14px;
+      letter-spacing: 2px;
+      fill: #ffffff;
+    }
+    .stats-meta {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+    }
+    .panel-header {
+      font-family: 'Century Gothic', 'Trebuchet MS', 'Segoe UI', system-ui, sans-serif;
+      font-weight: 900;
+      font-size: 13px;
+      letter-spacing: 1.8px;
+    }
+    .metric-value {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', monospace;
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: 1.2px;
+    }
+    .metric-sub {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      fill: #94a3b8;
+    }
+    .lang-label {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .pulse-dot-stats {
+      animation: pulseStats 1.8s infinite ease-in-out;
+    }
+    @keyframes pulseStats {
+      0% { opacity: 0.3; }
+      50% { opacity: 1; }
+      100% { opacity: 0.3; }
+    }
+  </style>
+
+  <!-- Container Box with Chamfered Corners -->
+  <polygon points="18,4 882,4 896,18 896,262 882,276 18,276 4,262 4,18" fill="url(#statsBg)" stroke="url(#statsBorderGrad)" stroke-width="1.3" />
+
+  <!-- Inner Tech Grid -->
+  <polygon points="18,4 882,4 896,18 896,262 882,276 18,276 4,262 4,18" fill="url(#statsGrid)" />
+
+  <!-- Sci-Fi Corner Brackets -->
+  <g stroke="#ff0055" stroke-width="1.5" fill="none" opacity="0.6">
+    <path d="M 890 14 L 890 26 L 878 26" />
+    <path d="M 10 266 L 10 254 L 22 254" />
+  </g>
+
+  <!-- Left Caution Decal -->
+  <polygon points="4,18 4,50 12,42 12,18" fill="url(#statsCaution)" />
+
+  <!-- Top Header Telemetry Bar -->
+  <g transform="translate(24, 22)">
+    <text x="0" y="0" class="stats-title">
+      <tspan fill="#ff0055">//</tspan> TELEMETRY_MATRIX <tspan fill="#00f0ff">//</tspan> GITHUB CORE ANALYTICS
+    </text>
+    <text x="0" y="15" fill="#64748b" class="stats-meta">SYNCED REPOSITORIES: 44 • COMMITS LOGGED: 250+ • HIGH-FREQUENCY PIPELINES</text>
+
+    <!-- Right Header Status Badge -->
+    <polygon points="706,-12 866,-12 874,4 714,4" fill="#141732" stroke="#00ff66" stroke-width="1" />
+    <circle cx="722" cy="-4" r="3" fill="#00ff66" class="pulse-dot-stats" />
+    <text x="732" y="-1" fill="#00ff66" class="stats-meta">SYNC: LIVE METRICS</text>
+  </g>
+
+  <!-- Horizontal Tech Separator -->
+  <line x1="24" y1="48" x2="876" y2="48" stroke="#1f2947" stroke-width="1" />
+  <line x1="24" y1="48" x2="260" y2="48" stroke="#ff0055" stroke-width="1.5" opacity="0.8" />
+  <line x1="680" y1="48" x2="876" y2="48" stroke="#00f0ff" stroke-width="1.5" opacity="0.8" />
+
+  <!-- ================================================================= -->
+  <!-- LEFT POD: GITHUB PRODUCTION METRICS (420 x 200) -->
+  <!-- ================================================================= -->
+  <g transform="translate(24, 60)">
+    <!-- Pod Container -->
+    <polygon points="12,0 410,0 422,12 422,190 410,202 12,202 0,190 0,12" fill="url(#statsPodBg)" stroke="#00f0ff" stroke-width="1.2" />
+
+    <!-- Pod Header -->
+    <g transform="translate(14, 24)">
+      <circle cx="6" cy="-4" r="4" fill="#00f0ff" />
+      <text x="18" y="0" fill="#00f0ff" class="panel-header">[ GITHUB_CORE_METRICS ]</text>
+      <!-- Sub-tag badge -->
+      <polygon points="318,-12 396,-12 402,2 324,2" fill="#091b26" stroke="#00f0ff" stroke-width="0.8" />
+      <text x="360" y="-3" text-anchor="middle" fill="#00f0ff" class="stats-meta">ACTIVE DECK</text>
+    </g>
+
+    <line x1="14" y1="36" x2="408" y2="36" stroke="#1f2947" stroke-width="1" />
+
+    <!-- 2x2 Grid of Metrics -->
+    <!-- Metric 1: Total Commits (Top-Left) -->
+    <g transform="translate(16, 52)">
+      <polygon points="0,0 186,0 192,54 6,54" fill="#0c1729" stroke="#00f0ff" stroke-width="0.8" />
+      <text x="14" y="24" fill="#00f0ff" class="metric-value">252+</text>
+      <text x="14" y="42" class="metric-sub">TOTAL COMMITS (2026)</text>
+    </g>
+
+    <!-- Metric 2: Public Repositories (Top-Right) -->
+    <g transform="translate(216, 52)">
+      <polygon points="0,0 186,0 192,54 6,54" fill="#201124" stroke="#ff0055" stroke-width="0.8" />
+      <text x="14" y="24" fill="#ff0055" class="metric-value">44</text>
+      <text x="14" y="42" class="metric-sub">PUBLIC REPOSITORIES</text>
+    </g>
+
+    <!-- Metric 3: Stars & Forks (Bottom-Left) -->
+    <g transform="translate(16, 120)">
+      <polygon points="0,0 186,0 192,54 6,54" fill="#221e0a" stroke="#fcee0a" stroke-width="0.8" />
+      <text x="14" y="24" fill="#fcee0a" class="metric-value">3 ★ / 2 ⑂</text>
+      <text x="14" y="42" class="metric-sub">STARS &amp; FORKS EARNED</text>
+    </g>
+
+    <!-- Metric 4: Direct Merges / Active Streak (Bottom-Right) -->
+    <g transform="translate(216, 120)">
+      <polygon points="0,0 186,0 192,54 6,54" fill="#0f2216" stroke="#00ff66" stroke-width="0.8" />
+      <text x="14" y="24" fill="#00ff66" class="metric-value">100%</text>
+      <text x="14" y="42" class="metric-sub">CI/CD PASS RATE [BOT]</text>
+    </g>
+  </g>
+
+  <!-- ================================================================= -->
+  <!-- RIGHT POD: LANGUAGE RUNTIME DISTRIBUTION (420 x 200) -->
+  <!-- ================================================================= -->
+  <g transform="translate(456, 60)">
+    <!-- Pod Container -->
+    <polygon points="12,0 410,0 422,12 422,190 410,202 12,202 0,190 0,12" fill="url(#statsPodBg)" stroke="#ff0055" stroke-width="1.2" />
+
+    <!-- Pod Header -->
+    <g transform="translate(14, 24)">
+      <circle cx="6" cy="-4" r="4" fill="#ff0055" />
+      <text x="18" y="0" fill="#ff0055" class="panel-header">[ CODE_DISTRIBUTION ]</text>
+      <!-- Sub-tag badge -->
+      <polygon points="318,-12 396,-12 402,2 324,2" fill="#240e1c" stroke="#ff0055" stroke-width="0.8" />
+      <text x="360" y="-3" text-anchor="middle" fill="#ff0055" class="stats-meta">ACCURATE</text>
+    </g>
+
+    <line x1="14" y1="36" x2="408" y2="36" stroke="#1f2947" stroke-width="1" />
+
+    <!-- Language 1: TypeScript (29.2%) -->
+    <g transform="translate(16, 50)">
+      <text x="0" y="8" fill="#a5f3fc" class="lang-label">TypeScript</text>
+      <text x="390" y="8" text-anchor="end" fill="#00f0ff" class="lang-label">29.2%</text>
+      <rect x="0" y="14" width="390" height="6" rx="3" fill="#0c1729" />
+      <rect x="0" y="14" width="114" height="6" rx="3" fill="url(#barTsGrad)">
+        <animate attributeName="width" values="106;114;110;114" dur="2.8s" repeatCount="indefinite" />
+      </rect>
+    </g>
+
+    <!-- Language 2: JavaScript (25.9%) -->
+    <g transform="translate(16, 78)">
+      <text x="0" y="8" fill="#fef08a" class="lang-label">JavaScript</text>
+      <text x="390" y="8" text-anchor="end" fill="#fcee0a" class="lang-label">25.9%</text>
+      <rect x="0" y="14" width="390" height="6" rx="3" fill="#0c1729" />
+      <rect x="0" y="14" width="101" height="6" rx="3" fill="url(#barJsGrad)">
+        <animate attributeName="width" values="94;101;98;101" dur="3.1s" repeatCount="indefinite" />
+      </rect>
+    </g>
+
+    <!-- Language 3: SCSS & CSS (25.2%) -->
+    <g transform="translate(16, 106)">
+      <text x="0" y="8" fill="#fbcfe8" class="lang-label">SCSS &amp; CSS3</text>
+      <text x="390" y="8" text-anchor="end" fill="#ff0055" class="lang-label">25.2%</text>
+      <rect x="0" y="14" width="390" height="6" rx="3" fill="#0c1729" />
+      <rect x="0" y="14" width="98" height="6" rx="3" fill="url(#barScssGrad)">
+        <animate attributeName="width" values="90;98;95;98" dur="2.9s" repeatCount="indefinite" />
+      </rect>
+    </g>
+
+    <!-- Language 4: HTML5 & Templates (15.7%) -->
+    <g transform="translate(16, 134)">
+      <text x="0" y="8" fill="#fed7aa" class="lang-label">HTML5 Templates</text>
+      <text x="390" y="8" text-anchor="end" fill="#f97316" class="lang-label">15.7%</text>
+      <rect x="0" y="14" width="390" height="6" rx="3" fill="#0c1729" />
+      <rect x="0" y="14" width="61" height="6" rx="3" fill="url(#barHtmlGrad)">
+        <animate attributeName="width" values="55;61;58;61" dur="3.4s" repeatCount="indefinite" />
+      </rect>
+    </g>
+
+    <!-- Language 5: Backend & Others (4.0%) -->
+    <g transform="translate(16, 162)">
+      <text x="0" y="8" fill="#cbd5e1" class="lang-label">PHP, Shell &amp; Others</text>
+      <text x="390" y="8" text-anchor="end" fill="#94a3b8" class="lang-label">4.0%</text>
+      <rect x="0" y="14" width="390" height="6" rx="3" fill="#0c1729" />
+      <rect x="0" y="14" width="16" height="6" rx="3" fill="#818cf8" />
+    </g>
+  </g>
+</svg>

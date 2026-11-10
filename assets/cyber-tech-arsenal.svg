@@ -1,0 +1,393 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" width="100%" height="330">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="arsenalBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05060f" />
+      <stop offset="50%" stop-color="#090b1c" />
+      <stop offset="100%" stop-color="#0e1026" />
+    </linearGradient>
+
+    <!-- Glowing Outer Border Gradient -->
+    <linearGradient id="arsenalBorderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.9" />
+      <stop offset="35%" stop-color="#7928ca" stop-opacity="0.7" />
+      <stop offset="70%" stop-color="#ff0055" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#fcee0a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Pod Card Background -->
+    <linearGradient id="podBgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d1026" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#070814" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Tech Grid Pattern -->
+    <pattern id="arsenalGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#00f0ff" stroke-width="0.5" stroke-opacity="0.05" />
+    </pattern>
+
+    <!-- Caution Diagonal Stripes -->
+    <pattern id="arsenalCaution" width="10" height="10" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#fcee0a" stroke-width="2.5" stroke-opacity="0.8" />
+      <line x1="5" y1="0" x2="5" y2="10" stroke="#05060f" stroke-width="2.5" stroke-opacity="0.8" />
+    </pattern>
+
+    <!-- Neon Glow Filter -->
+    <filter id="arsenalGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .arsenal-title {
+      font-family: 'Century Gothic', 'Trebuchet MS', 'Segoe UI', system-ui, sans-serif;
+      font-weight: 900;
+      font-size: 14px;
+      letter-spacing: 2px;
+      fill: #ffffff;
+    }
+    .arsenal-meta {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+    }
+    .pod-header {
+      font-family: 'Century Gothic', 'Trebuchet MS', 'Segoe UI', system-ui, sans-serif;
+      font-weight: 900;
+      font-size: 13px;
+      letter-spacing: 1.8px;
+    }
+    .badge-label {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+    }
+    .pod-footer-text {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      fill: #94a3b8;
+    }
+    .pulse-dot {
+      animation: arsenalPulse 1.8s infinite ease-in-out;
+    }
+    @keyframes arsenalPulse {
+      0% { opacity: 0.3; }
+      50% { opacity: 1; }
+      100% { opacity: 0.3; }
+    }
+  </style>
+
+  <!-- Container Box with Chamfered Corners -->
+  <polygon points="18,4 882,4 896,18 896,312 882,326 18,326 4,312 4,18" fill="url(#arsenalBg)" stroke="url(#arsenalBorderGrad)" stroke-width="1.3" />
+
+  <!-- Inner Tech Grid Overlay -->
+  <polygon points="18,4 882,4 896,18 896,312 882,326 18,326 4,312 4,18" fill="url(#arsenalGrid)" />
+
+  <!-- Sci-Fi Corner Brackets -->
+  <g stroke="#00f0ff" stroke-width="1.5" fill="none" opacity="0.6">
+    <path d="M 890 14 L 890 26 L 878 26" />
+    <path d="M 10 316 L 10 304 L 22 304" />
+  </g>
+
+  <!-- Left Caution Decal -->
+  <polygon points="4,18 4,55 12,47 12,18" fill="url(#arsenalCaution)" />
+
+  <!-- Top Header Telemetry Bar -->
+  <g transform="translate(24, 22)">
+    <text x="0" y="0" class="arsenal-title">
+      <tspan fill="#00f0ff">//</tspan> ARSENAL_SPECIFICATIONS <tspan fill="#ff0055">//</tspan> FULL-STACK STACK
+    </text>
+    <text x="0" y="15" fill="#64748b" class="arsenal-meta">RUNTIME ARCHITECTURE • ENTERPRISE PATTERNS • V8 ENGINE</text>
+
+    <!-- Right Header Status Badge -->
+    <polygon points="670,-12 866,-12 874,4 678,4" fill="#141732" stroke="#00ff66" stroke-width="1" />
+    <circle cx="685" cy="-4" r="3" fill="#00ff66" class="pulse-dot" />
+    <text x="696" y="-1" fill="#00ff66" class="arsenal-meta">MODULES: 24/24 [ONLINE]</text>
+  </g>
+
+  <!-- Horizontal Tech Separator -->
+  <line x1="24" y1="48" x2="876" y2="48" stroke="#1f2947" stroke-width="1" />
+  <line x1="24" y1="48" x2="240" y2="48" stroke="#00f0ff" stroke-width="1.5" opacity="0.8" />
+  <line x1="680" y1="48" x2="876" y2="48" stroke="#fcee0a" stroke-width="1.5" opacity="0.8" />
+
+  <!-- ================================================================= -->
+  <!-- POD 01: FRONTEND_CORE (CYAN NEON ACCENT) -->
+  <!-- ================================================================= -->
+  <g transform="translate(24, 60)">
+    <!-- Pod Container (width: 272, height: 250) -->
+    <polygon points="12,0 260,0 272,12 272,238 260,250 12,250 0,238 0,12" fill="url(#podBgGrad)" stroke="#00f0ff" stroke-width="1.2" />
+
+    <!-- Pod Header -->
+    <g transform="translate(14, 24)">
+      <circle cx="6" cy="-4" r="4" fill="#00f0ff" />
+      <text x="18" y="0" fill="#00f0ff" class="pod-header">[ FRONTEND_CORE ]</text>
+      <!-- Sub-tag badge -->
+      <polygon points="172,-12 238,-12 244,2 178,2" fill="#071b26" stroke="#00f0ff" stroke-width="0.8" />
+      <text x="210" y="-3" text-anchor="middle" fill="#00f0ff" class="badge-label">REACTIVE</text>
+    </g>
+
+    <line x1="14" y1="36" x2="258" y2="36" stroke="#1f2947" stroke-width="1" />
+
+    <!-- Badges Grid (3 rows x 2 cols) -->
+    <!-- Row 1: Angular & TypeScript -->
+    <g transform="translate(14, 50)">
+      <!-- Angular 19+ -->
+      <polygon points="0,0 114,0 120,24 6,24" fill="#1f1124" stroke="#ff0055" stroke-width="1" />
+      <circle cx="12" cy="12" r="3" fill="#ff0055" />
+      <text x="22" y="15.5" fill="#fda4af" class="badge-label">ANGULAR 19+</text>
+
+      <!-- TypeScript -->
+      <g transform="translate(126, 0)">
+        <polygon points="0,0 112,0 118,24 6,24" fill="#0d1b2a" stroke="#00f0ff" stroke-width="1" />
+        <circle cx="12" cy="12" r="3" fill="#00f0ff" />
+        <text x="22" y="15.5" fill="#a5f3fc" class="badge-label">TYPESCRIPT</text>
+      </g>
+    </g>
+
+    <!-- Row 2: RxJS / Signals & Tailwind CSS -->
+    <g transform="translate(14, 84)">
+      <!-- RxJS & Signals -->
+      <polygon points="0,0 114,0 120,24 6,24" fill="#241220" stroke="#e11d48" stroke-width="1" />
+      <circle cx="12" cy="12" r="3" fill="#f43f5e" />
+      <text x="22" y="15.5" fill="#fbcfe8" class="badge-label">RXJS / SIGNALS</text>
+
+      <!-- Tailwind CSS -->
+      <g transform="translate(126, 0)">
+        <polygon points="0,0 112,0 118,24 6,24" fill="#0a232e" stroke="#38bdf8" stroke-width="1" />
+        <circle cx="12" cy="12" r="3" fill="#38bdf8" />
+        <text x="22" y="15.5" fill="#bae6fd" class="badge-label">TAILWIND CSS</text>
+      </g>
+    </g>
+
+    <!-- Row 3: HTML5 / CSS3 & Sass / SCSS -->
+    <g transform="translate(14, 118)">
+      <!-- HTML5 / CSS3 -->
+      <polygon points="0,0 114,0 120,24 6,24" fill="#22180d" stroke="#f97316" stroke-width="1" />
+      <circle cx="12" cy="12" r="3" fill="#f97316" />
+      <text x="22" y="15.5" fill="#fed7aa" class="badge-label">HTML5 • CSS3</text>
+
+      <!-- Sass / SCSS -->
+      <g transform="translate(126, 0)">
+        <polygon points="0,0 112,0 118,24 6,24" fill="#24101e" stroke="#ec4899" stroke-width="1" />
+        <circle cx="12" cy="12" r="3" fill="#ec4899" />
+        <text x="22" y="15.5" fill="#fbcfe8" class="badge-label">SASS / SCSS</text>
+      </g>
+    </g>
+
+    <!-- Row 4: JavaScript & Web Performance -->
+    <g transform="translate(14, 152)">
+      <!-- JavaScript ESNext -->
+      <polygon points="0,0 114,0 120,24 6,24" fill="#221e0a" stroke="#fcee0a" stroke-width="1" />
+      <circle cx="12" cy="12" r="3" fill="#fcee0a" />
+      <text x="22" y="15.5" fill="#fef08a" class="badge-label">JAVASCRIPT ES+</text>
+
+      <!-- Architecture -->
+      <g transform="translate(126, 0)">
+        <polygon points="0,0 112,0 118,24 6,24" fill="#141732" stroke="#818cf8" stroke-width="1" />
+        <circle cx="12" cy="12" r="3" fill="#818cf8" />
+        <text x="22" y="15.5" fill="#c7d2fe" class="badge-label">SSR &amp; ROUTER</text>
+      </g>
+    </g>
+
+    <!-- Pod Footer Telemetry -->
+    <g transform="translate(14, 206)">
+      <line x1="0" y1="0" x2="244" y2="0" stroke="#1f2947" stroke-width="0.8" />
+      <text x="0" y="18" class="pod-footer-text">
+        <tspan fill="#00f0ff">CORE:</tspan> Signals • Reactive
+      </text>
+      <text x="244" y="18" text-anchor="end" class="pod-footer-text" fill="#00ff66">
+        SYNC: 98%
+      </text>
+    </g>
+  </g>
+
+  <!-- ================================================================= -->
+  <!-- POD 02: BACKEND_RUNTIME (MAGENTA NEON ACCENT) -->
+  <!-- ================================================================= -->
+  <g transform="translate(314, 60)">
+    <!-- Pod Container (width: 272, height: 250) -->
+    <polygon points="12,0 260,0 272,12 272,238 260,250 12,250 0,238 0,12" fill="url(#podBgGrad)" stroke="#ff0055" stroke-width="1.2" />
+
+    <!-- Pod Header -->
+    <g transform="translate(14, 24)">
+      <circle cx="6" cy="-4" r="4" fill="#ff0055" />
+      <text x="18" y="0" fill="#ff0055" class="pod-header">[ BACKEND_CORE ]</text>
+      <!-- Sub-tag badge -->
+      <polygon points="166,-12 238,-12 244,2 172,2" fill="#220d18" stroke="#ff0055" stroke-width="0.8" />
+      <text x="208" y="-3" text-anchor="middle" fill="#ff0055" class="badge-label">ASYNC I/O</text>
+    </g>
+
+    <line x1="14" y1="36" x2="258" y2="36" stroke="#1f2947" stroke-width="1" />
+
+    <!-- Badges Grid (3 rows x 2 cols) -->
+    <!-- Row 1: Node.js & Express -->
+    <g transform="translate(14, 50)">
+      <!-- Node.js -->
+      <polygon points="0,0 114,0 120,24 6,24" fill="#0f2214" stroke="#22c55e" stroke-width="1" />
+      <circle cx="12" cy="12" r="3" fill="#22c55e" />
+      <text x="22" y="15.5" fill="#bbf7d0" class="badge-label">NODE.JS</text>
+
+      <!-- Express.js -->
+      <g transform="translate(126, 0)">
+        <polygon points="0,0 112,0 118,24 6,24" fill="#1a1c29" stroke="#94a3b8" stroke-width="1" />
+        <circle cx="12" cy="12" r="3" fill="#ffffff" />
+        <text x="22" y="15.5" fill="#f8fafc" class="badge-label">EXPRESS.JS</text>
+      </g>
+    </g>
+
+    <!-- Row 2: Firebase & Cloud Auth -->
+    <g transform="translate(14, 84)">
+      <!-- Firebase Cloud -->
+      <polygon points="0,0 114,0 120,24 6,24" fill="#251c08" stroke="#f59e0b" stroke-width="1" />
+      <circle cx="12" cy="12" r="3" fill="#f59e0b" />
+      <text x="22" y="15.5" fill="#fde68a" class="badge-label">FIREBASE CLOUD</text>
+
+      <!-- Cloud Auth & Rules -->
+      <g transform="translate(126, 0)">
+        <polygon points="0,0 112,0 118,24 6,24" fill="#1a0f26" stroke="#a855f7" stroke-width="1" />
+        <circle cx="12" cy="12" r="3" fill="#a855f7" />
+        <text x="22" y="15.5" fill="#e9d5ff" class="badge-label">AUTH &amp; FIRESTORE</text>
+      </g>
+    </g>
+
+    <!-- Row 3: PHP 8.x & MySQL -->
+    <g transform="translate(14, 118)">
+      <!-- PHP 8.x -->
+      <polygon points="0,0 114,0 120,24 6,24" fill="#14172e" stroke="#6366f1" stroke-width="1" />
+      <circle cx="12" cy="12" r="3" fill="#6366f1" />
+      <text x="22" y="15.5" fill="#c7d2fe" class="badge-label">PHP 8.x</text>
+
+      <!-- MySQL Relational -->
+      <g transform="translate(126, 0)">
+        <polygon points="0,0 112,0 118,24 6,24" fill="#091f2c" stroke="#0ea5e9" stroke-width="1" />
+        <circle cx="12" cy="12" r="3" fill="#0ea5e9" />
+        <text x="22" y="15.5" fill="#bae6fd" class="badge-label">MYSQL DB</text>
+      </g>
+    </g>
+
+    <!-- Row 4: MongoDB & RESTful APIs -->
+    <g transform="translate(14, 152)">
+      <!-- MongoDB -->
+      <polygon points="0,0 114,0 120,24 6,24" fill="#0c2014" stroke="#10b981" stroke-width="1" />
+      <circle cx="12" cy="12" r="3" fill="#10b981" />
+      <text x="22" y="15.5" fill="#a7f3d0" class="badge-label">MONGODB</text>
+
+      <!-- RESTful API Core -->
+      <g transform="translate(126, 0)">
+        <polygon points="0,0 112,0 118,24 6,24" fill="#20101b" stroke="#f43f5e" stroke-width="1" />
+        <circle cx="12" cy="12" r="3" fill="#f43f5e" />
+        <text x="22" y="15.5" fill="#fecdd3" class="badge-label">RESTful APIs</text>
+      </g>
+    </g>
+
+    <!-- Pod Footer Telemetry -->
+    <g transform="translate(14, 206)">
+      <line x1="0" y1="0" x2="244" y2="0" stroke="#1f2947" stroke-width="0.8" />
+      <text x="0" y="18" class="pod-footer-text">
+        <tspan fill="#ff0055">CORE:</tspan> REST APIs • JWT
+      </text>
+      <text x="244" y="18" text-anchor="end" class="pod-footer-text" fill="#00ff66">
+        LOAD: NOMINAL
+      </text>
+    </g>
+  </g>
+
+  <!-- ================================================================= -->
+  <!-- POD 03: DEVOPS_TOOLING (CYBER YELLOW ACCENT) -->
+  <!-- ================================================================= -->
+  <g transform="translate(604, 60)">
+    <!-- Pod Container (width: 272, height: 250) -->
+    <polygon points="12,0 260,0 272,12 272,238 260,250 12,250 0,238 0,12" fill="url(#podBgGrad)" stroke="#fcee0a" stroke-width="1.2" />
+
+    <!-- Pod Header -->
+    <g transform="translate(14, 24)">
+      <circle cx="6" cy="-4" r="4" fill="#fcee0a" />
+      <text x="18" y="0" fill="#fcee0a" class="pod-header">[ DEVOPS_TOOLING ]</text>
+      <!-- Sub-tag badge -->
+      <polygon points="166,-12 238,-12 244,2 172,2" fill="#222008" stroke="#fcee0a" stroke-width="0.8" />
+      <text x="208" y="-3" text-anchor="middle" fill="#fcee0a" class="badge-label">AUTOMATED</text>
+    </g>
+
+    <line x1="14" y1="36" x2="258" y2="36" stroke="#1f2947" stroke-width="1" />
+
+    <!-- Badges Grid (3 rows x 2 cols) -->
+    <!-- Row 1: Git & GitHub Actions -->
+    <g transform="translate(14, 50)">
+      <!-- Git -->
+      <polygon points="0,0 114,0 120,24 6,24" fill="#24130c" stroke="#f97316" stroke-width="1" />
+      <circle cx="12" cy="12" r="3" fill="#f97316" />
+      <text x="22" y="15.5" fill="#fed7aa" class="badge-label">GIT WORKFLOWS</text>
+
+      <!-- GitHub Actions -->
+      <g transform="translate(126, 0)">
+        <polygon points="0,0 112,0 118,24 6,24" fill="#0d1b2a" stroke="#00f0ff" stroke-width="1" />
+        <circle cx="12" cy="12" r="3" fill="#00f0ff" />
+        <text x="22" y="15.5" fill="#a5f3fc" class="badge-label">GH ACTIONS CI</text>
+      </g>
+    </g>
+
+    <!-- Row 2: Docker & Linux Core -->
+    <g transform="translate(14, 84)">
+      <!-- Docker -->
+      <polygon points="0,0 114,0 120,24 6,24" fill="#0a1d2e" stroke="#0284c7" stroke-width="1" />
+      <circle cx="12" cy="12" r="3" fill="#0284c7" />
+      <text x="22" y="15.5" fill="#bae6fd" class="badge-label">DOCKER ENGINE</text>
+
+      <!-- Linux Core -->
+      <g transform="translate(126, 0)">
+        <polygon points="0,0 112,0 118,24 6,24" fill="#221e0a" stroke="#fcee0a" stroke-width="1" />
+        <circle cx="12" cy="12" r="3" fill="#fcee0a" />
+        <text x="22" y="15.5" fill="#fef08a" class="badge-label">LINUX BASH CLI</text>
+      </g>
+    </g>
+
+    <!-- Row 3: VS Code & Postman -->
+    <g transform="translate(14, 118)">
+      <!-- VS Code -->
+      <polygon points="0,0 114,0 120,24 6,24" fill="#0b1b2a" stroke="#38bdf8" stroke-width="1" />
+      <circle cx="12" cy="12" r="3" fill="#38bdf8" />
+      <text x="22" y="15.5" fill="#bae6fd" class="badge-label">VS CODE IDE</text>
+
+      <!-- Postman API Testing -->
+      <g transform="translate(126, 0)">
+        <polygon points="0,0 112,0 118,24 6,24" fill="#251408" stroke="#ea580c" stroke-width="1" />
+        <circle cx="12" cy="12" r="3" fill="#ea580c" />
+        <text x="22" y="15.5" fill="#fed7aa" class="badge-label">POSTMAN API</text>
+      </g>
+    </g>
+
+    <!-- Row 4: CI/CD & Deploy Pipelines -->
+    <g transform="translate(14, 152)">
+      <!-- CI/CD Pipelines -->
+      <polygon points="0,0 114,0 120,24 6,24" fill="#141a2e" stroke="#6366f1" stroke-width="1" />
+      <circle cx="12" cy="12" r="3" fill="#6366f1" />
+      <text x="22" y="15.5" fill="#c7d2fe" class="badge-label">CI/CD PIPELINES</text>
+
+      <!-- Firebase Hosting -->
+      <g transform="translate(126, 0)">
+        <polygon points="0,0 112,0 118,24 6,24" fill="#251a08" stroke="#eab308" stroke-width="1" />
+        <circle cx="12" cy="12" r="3" fill="#eab308" />
+        <text x="22" y="15.5" fill="#fef08a" class="badge-label">CLOUD DEPLOY</text>
+      </g>
+    </g>
+
+    <!-- Pod Footer Telemetry -->
+    <g transform="translate(14, 206)">
+      <line x1="0" y1="0" x2="244" y2="0" stroke="#1f2947" stroke-width="0.8" />
+      <text x="0" y="18" class="pod-footer-text">
+        <tspan fill="#fcee0a">FOCUS:</tspan> Automated Test &amp; Delivery
+      </text>
+      <text x="244" y="18" text-anchor="end" class="pod-footer-text" fill="#00ff66">
+        STABLE
+      </text>
+    </g>
+  </g>
+</svg>

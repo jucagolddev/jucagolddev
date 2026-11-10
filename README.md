@@ -13,6 +13,10 @@
 
   <br/>
 
+  <p align="center">
+    <img src="./assets/cyber-identity-strip.svg" width="100%" alt="Cyberpunk Identity HUD Strip" />
+  </p>
+
   <!-- BADGES DE CONTACTO Y TELEMETRÍA (NIGHT CITY COLOR PALETTE) -->
   <p align="center">
     <a href="https://linkedin.com/in/jucagolddev" target="_blank">
@@ -71,36 +75,13 @@
 <!-- =================================================================== -->
 <img src="./assets/headers/header-tech.svg" width="100%" alt="Stack Tecnológico" />
 
-<div align="center">
-  <table border="0" width="100%" cellpadding="10" cellspacing="0">
-    <tr>
-      <td width="33%" align="center" valign="top">
-        <h4><img src="./assets/icons/frontend.svg" width="16" height="16" valign="middle" /> [ FRONTEND_CORE ]</h4>
-        <img src="https://skillicons.dev/icons?i=angular,ts,js,rxjs,html,css,tailwind,sass&theme=dark&perline=4" alt="Frontend" />
-        <br/><br/>
-        <sub><b>Angular • TypeScript • JavaScript • RxJS<br/>HTML5 • CSS3 • Tailwind • Sass</b></sub>
-      </td>
-      <td width="33%" align="center" valign="top">
-        <h4><img src="./assets/icons/backend.svg" width="16" height="16" valign="middle" /> [ BACKEND_RUNTIME ]</h4>
-        <img src="https://skillicons.dev/icons?i=nodejs,express,php,firebase,mysql,mongodb&theme=dark&perline=3" alt="Backend" />
-        <br/><br/>
-        <sub><b>Node.js • Express • PHP<br/>Firebase • MySQL • MongoDB</b></sub>
-      </td>
-      <td width="33%" align="center" valign="top">
-        <h4><img src="./assets/icons/tools.svg" width="16" height="16" valign="middle" /> [ DEVOPS_TOOLING ]</h4>
-        <img src="https://skillicons.dev/icons?i=git,github,githubactions,vscode,postman,docker,linux&theme=dark&perline=4" alt="Tools" />
-        <br/><br/>
-        <sub><b>Git • GitHub • GitHub Actions<br/>VS Code • Postman • Docker • Linux</b></sub>
-      </td>
-    </tr>
-  </table>
+<p align="center">
+  <img src="./assets/cyber-tech-arsenal.svg" width="100%" alt="Cyber Arsenal Tech Specifications Pods" />
+</p>
 
-  <br/>
-
-  <p align="center">
-    <img src="./assets/cyber-skills-matrix.svg" width="100%" alt="Cyberpunk Neural Competency Matrix" />
-  </p>
-</div>
+<p align="center">
+  <img src="./assets/cyber-skills-matrix.svg" width="100%" alt="Cyberpunk Neural Competency Matrix" />
+</p>
 
 <p align="center">
   <img src="./assets/divider.svg" width="100%" />
@@ -139,24 +120,9 @@
   <img src="./assets/cyber-status.svg" width="100%" alt="Cyber Telemetry Live Node.js Feed" />
 </p>
 
-<div align="center">
-  <!-- TARJETAS DE STATS Y TOP LANGUAGES EN ALTA VELOCIDAD -->
-  <table border="0" cellpadding="0" cellspacing="0">
-    <tr>
-      <td align="center">
-        <img height="180em" src="https://github-readme-stats-fast.vercel.app/api?username=jucagolddev&show_icons=true&hide_border=false&bg_color=05050b&title_color=00f0ff&text_color=cbd5e1&icon_color=fcee0a&border_color=ff0055" alt="GitHub Stats" />
-      </td>
-      <td align="center">
-        <img height="180em" src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=jucagolddev&layout=compact&langs_count=6&hide_border=false&bg_color=05050b&title_color=00f0ff&text_color=cbd5e1&icon_color=fcee0a&border_color=00f0ff" alt="Top Languages" />
-      </td>
-    </tr>
-  </table>
-
-  <br/>
-
-  <!-- RACHA DE ACTIVIDAD CONTINUA (CYBERPUNK NIGHT CITY THEME) -->
-  <img src="https://streak-stats.demolab.com?user=jucagolddev&hide_border=false&background=05050B&ring=00F0FF&fire=FF0055&currStreakLabel=FCEE0A&currStreakNum=00F0FF&sideNums=CBD5E1&sideLabels=94A3B8&dates=64748B&border=FF0055" alt="GitHub Streak" />
-</div>
+<p align="center">
+  <img src="./assets/cyber-stats-matrix.svg" width="100%" alt="Cyberpunk Stats &amp; Language Distribution Matrix" />
+</p>
 
 <p align="center">
   <img src="./assets/divider.svg" width="100%" />
