@@ -40,36 +40,23 @@
 <!-- =================================================================== -->
 <img src="./assets/headers/header-about.svg" width="100%" alt="Sobre Mí &amp; Enfoque" />
 
-<table align="center" width="100%" border="0" cellpadding="8" cellspacing="0">
-  <tr>
-    <td width="58%" valign="top">
-      <p>
-        ¡Hola! Soy <b>Juan Carlos Dorado López</b>, desarrollador de software y estudiante de <b>1º Grado en Ingeniería Informática</b> radicado en Utrera (Sevilla).
-      </p>
-      <p>
-        Me enfoco en el desarrollo web moderno bajo <b>Clean Architecture</b>, <b>patrones reactivos</b> y experiencias fluidas de usuario. Especializado en el ecosistema <b>Angular + TypeScript</b> (Signals, Control Flow, RxJS) y en su integración con servicios backend y cloud en tiempo real.
-      </p>
-      <p>
-        <img src="./assets/icons/target.svg" width="16" height="16" valign="middle" /> <b>Base Operativa:</b> Utrera, Sevilla, España<br/>
-        <img src="./assets/icons/focus.svg" width="16" height="16" valign="middle" /> <b>Foco Actual:</b> Angular Signals, Microfrontends, TypeScript estricto y Firebase.<br/>
-        <img src="./assets/icons/rocket.svg" width="16" height="16" valign="middle" /> <b>Misión:</b> Construir soluciones escalables, testeables y de alto impacto.
-      </p>
-    </td>
-    <td width="42%" valign="middle" align="center">
-      <a href="https://porfolio-juancarlosdoradolopez.web.app/" target="_blank">
-        <img src="https://img.shields.io/badge/LAUNCH_PORTFOLIO-OPEN_WEB-FF0055?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0e1020" width="94%" />
-      </a>
-      <br/><br/>
-      <a href="mailto:jucagolddev@gmail.com">
-        <img src="https://img.shields.io/badge/ESTABLISH_COMMS-EMAIL-00F0FF?style=for-the-badge&logo=gmail&logoColor=05050b&labelColor=0e1020" width="94%" />
-      </a>
-      <br/><br/>
-      <a href="https://github.com/jucagolddev?tab=repositories" target="_blank">
-        <img src="https://img.shields.io/badge/EXPLORE_PROJECTS-GITHUB_REPOS-FCEE0A?style=for-the-badge&logo=github&logoColor=05050b&labelColor=0e1020" width="94%" />
-      </a>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="./assets/cyber-terminal.svg" width="100%" alt="Netrunner Interactive Terminal CLI" />
+</p>
+
+<p align="center">
+  <a href="https://porfolio-juancarlosdoradolopez.web.app/" target="_blank">
+    <img src="https://img.shields.io/badge/LAUNCH_PORTFOLIO-OPEN_WEB-FF0055?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0e1020" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="mailto:jucagolddev@gmail.com">
+    <img src="https://img.shields.io/badge/ESTABLISH_COMMS-EMAIL-00F0FF?style=for-the-badge&logo=gmail&logoColor=05050b&labelColor=0e1020" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/jucagolddev?tab=repositories" target="_blank">
+    <img src="https://img.shields.io/badge/EXPLORE_PROJECTS-GITHUB_REPOS-FCEE0A?style=for-the-badge&logo=github&logoColor=05050b&labelColor=0e1020" />
+  </a>
+</p>
 
 <p align="center">
   <img src="./assets/divider.svg" width="100%" />

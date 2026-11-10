@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 310" width="100%" height="310">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05060f" />
+      <stop offset="50%" stop-color="#080a18" />
+      <stop offset="100%" stop-color="#0c0e22" />
+    </linearGradient>
+
+    <!-- Top Bar Gradient -->
+    <linearGradient id="topBarBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#101328" />
+      <stop offset="50%" stop-color="#161a36" />
+      <stop offset="100%" stop-color="#0d0f22" />
+    </linearGradient>
+
+    <!-- Glowing Cyber Border Gradient -->
+    <linearGradient id="termBorderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.8" />
+      <stop offset="30%" stop-color="#7928ca" stop-opacity="0.6" />
+      <stop offset="70%" stop-color="#ff0055" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#fcee0a" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Scanline Pattern -->
+    <pattern id="scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100" y2="0" stroke="#00f0ff" stroke-width="0.7" stroke-opacity="0.04" />
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="termGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .term-text {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 12.5px;
+      letter-spacing: 0.5px;
+    }
+    .term-title {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      fill: #94a3b8;
+    }
+    .term-meta {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      fill: #00f0ff;
+    }
+    .cursor-blink {
+      animation: blinkCursor 0.9s infinite;
+    }
+    @keyframes blinkCursor {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+  </style>
+
+  <!-- Window Container with Chamfered Corners -->
+  <polygon points="18,4 882,4 896,18 896,292 882,306 18,306 4,292 4,18" fill="url(#termBg)" stroke="url(#termBorderGrad)" stroke-width="1.4" />
+
+  <!-- CRT Scanlines Overlay -->
+  <polygon points="18,4 882,4 896,18 896,292 882,306 18,306 4,292 4,18" fill="url(#scanlines)" />
+
+  <!-- Top Title Bar -->
+  <path d="M 4 18 L 18 4 L 882 4 L 896 18 L 896 38 L 4 38 Z" fill="url(#topBarBg)" stroke="url(#termBorderGrad)" stroke-width="1" />
+
+  <!-- Window Controls (Red, Yellow, Cyan Glowing Buttons) -->
+  <g transform="translate(24, 21)">
+    <circle cx="0" cy="0" r="5" fill="#ff0055" />
+    <circle cx="16" cy="0" r="5" fill="#fcee0a" />
+    <circle cx="32" cy="0" r="5" fill="#00f0ff" />
+  </g>
+
+  <!-- Center Window Title -->
+  <text x="450" y="24" text-anchor="middle" class="term-title">
+    netrunner@jucagolddev: ~ // session_id: #0042 [zsh]
+  </text>
+
+  <!-- Right Port Badge -->
+  <g transform="translate(864, 21)">
+    <rect x="-140" y="-8" width="132" height="16" rx="3" fill="#060714" stroke="#00f0ff" stroke-width="0.8" stroke-opacity="0.4" />
+    <circle cx="-128" cy="0" r="3" fill="#00ff66" />
+    <text x="-116" y="3.5" class="term-meta">PORT: 4200 [ANGULAR]</text>
+  </g>
+
+  <!-- Terminal Content Body -->
+  <g transform="translate(28, 64)" class="term-text">
+    <!-- Command 1 -->
+    <text x="0" y="0">
+      <tspan fill="#00f0ff" font-weight="700">guest@jucagolddev</tspan><tspan fill="#64748b">:</tspan><tspan fill="#fcee0a">~</tspan><tspan fill="#64748b">$</tspan> <tspan fill="#ffffff" font-weight="700">cat /etc/netrunner/identity.conf</tspan>
+    </text>
+
+    <!-- Output 1: Operator -->
+    <text x="14" y="26">
+      <tspan fill="#ff0055" font-weight="700">[OPERATOR]   :</tspan> <tspan fill="#ffffff" font-weight="700">Juan Carlos Dorado López</tspan> <tspan fill="#64748b">// Base: Utrera, Sevilla [ES]</tspan>
+    </text>
+
+    <!-- Output 2: Academics -->
+    <text x="14" y="52">
+      <tspan fill="#fcee0a" font-weight="700">[ACADEMICS]  :</tspan> <tspan fill="#e2e8f0">Estudiante de 1º Grado en Ingeniería Informática</tspan> <tspan fill="#00ff66">[EN CURSO]</tspan>
+    </text>
+
+    <!-- Output 3: Stack -->
+    <text x="14" y="78">
+      <tspan fill="#00f0ff" font-weight="700">[STACK_CORE] :</tspan> <tspan fill="#a5f3fc">Angular 19+ (Signals, Control Flow, Microfrontends) • TypeScript • RxJS</tspan>
+    </text>
+
+    <!-- Output 4: Architecture -->
+    <text x="14" y="104">
+      <tspan fill="#7928ca" font-weight="700">[DIRECTIVE]  :</tspan> <tspan fill="#e2e8f0">Clean Architecture • State Management Reactivo • Node.js / REST APIs</tspan>
+    </text>
+
+    <!-- Output 5: Cloud -->
+    <text x="14" y="130">
+      <tspan fill="#ff0055" font-weight="700">[CLOUD_INFRA]:</tspan> <tspan fill="#cbd5e1">Firebase (Hosting, Firestore, Auth) • Docker • CI/CD Pipelines en GitHub</tspan>
+    </text>
+
+    <!-- Command 2: Probe Live Cloud -->
+    <text x="0" y="166">
+      <tspan fill="#00f0ff" font-weight="700">guest@jucagolddev</tspan><tspan fill="#64748b">:</tspan><tspan fill="#fcee0a">~</tspan><tspan fill="#64748b">$</tspan> <tspan fill="#ffffff" font-weight="700">curl -I https://porfolio-juancarlosdoradolopez.web.app/</tspan>
+    </text>
+
+    <!-- Output 2: Probe result -->
+    <text x="14" y="192">
+      <tspan fill="#00ff66" font-weight="700">HTTP/2 200 OK</tspan> <tspan fill="#64748b">• server: Google Frontend • time: 14.8ms •</tspan> <tspan fill="#00f0ff">[ONLINE_LIVE]</tspan>
+    </text>
+
+    <!-- Active Command Prompt with Blinking Cursor -->
+    <text x="0" y="226">
+      <tspan fill="#00f0ff" font-weight="700">guest@jucagolddev</tspan><tspan fill="#64748b">:</tspan><tspan fill="#fcee0a">~</tspan><tspan fill="#64748b">$</tspan> <tspan fill="#ffffff" font-weight="700">deploy --release=v4.8 --target=production</tspan> <tspan fill="#00f0ff" class="cursor-blink" font-size="15">█</tspan>
+    </text>
+  </g>
+
+  <!-- Corner Tech Brackets -->
+  <g stroke="#00f0ff" stroke-width="1.4" fill="none" opacity="0.6">
+    <path d="M 8 28 L 8 16 L 20 16" />
+    <path d="M 892 280 L 892 292 L 880 292" />
+  </g>
+</svg>
