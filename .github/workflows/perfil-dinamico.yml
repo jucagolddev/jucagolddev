@@ -1,0 +1,52 @@
+name: Generar Gráficos 3D y Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Se actualiza automáticamente cada 24 horas a medianoche UTC
+  workflow_dispatch:     # Permite ejecutarlo manualmente con un clic desde la pestaña Actions
+  push:
+    branches:
+      - main
+
+jobs:
+  build-visuals:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 1. Genera la ciudad isométrica 3D de tus contribuciones
+      - name: Generar Gráfico 3D de Contribuciones
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Guardar Gráfico 3D en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A .
+          git diff --staged --quiet || (git commit -m "Actualizar gráfico 3D de contribuciones" && git push origin main)
+
+      # 2. Genera la serpiente animada en la rama output
+      - name: Generar Snake SVG
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      # 3. Publicar Snake en la rama output
+      - name: Publicar Snake en rama output
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
