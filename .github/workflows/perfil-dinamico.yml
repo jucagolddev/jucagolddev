@@ -33,14 +33,15 @@ jobs:
           git add -A .
           git diff --staged --quiet || (git commit -m "Actualizar gráfico 3D de contribuciones" && git push origin main)
 
-      # 2. Genera la serpiente animada en la rama output
+      # 2. Genera la serpiente animada en la rama output con paleta Cyberpunk Night City
       - name: Generar Snake SVG
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake-dark.svg?color_snake=#00f0ff&color_dots=#090a14,#1a1d36,#7928ca,#ff0055,#fcee0a
+
 
       # 3. Publicar Snake en la rama output
       - name: Publicar Snake en rama output
