@@ -2,7 +2,7 @@
 <!-- HERO BANNER LOCAL // CYBERPUNK NIGHT CITY EDITION -->
 <!-- =================================================================== -->
 <div align="center">
-  <img src="./assets/banner.svg" width="100%" alt="Juan Carlos Dorado López - Banner" />
+  <img src="./assets/banner.svg?v=cyberpunk" width="100%" alt="Juan Carlos Dorado López - Banner" />
 
   <br/><br/>
 
@@ -32,13 +32,13 @@
 </div>
 
 <p align="center">
-  <img src="./assets/divider.svg" width="100%" />
+  <img src="./assets/divider.svg?v=cyberpunk" width="100%" />
 </p>
 
 <!-- =================================================================== -->
 <!-- SECTION 01: SYS_BIO // SOBRE MÍ & ENFOQUE -->
 <!-- =================================================================== -->
-<img src="./assets/headers/header-about.svg" width="100%" alt="Sobre Mí &amp; Enfoque" />
+<img src="./assets/headers/header-about.svg?v=cyberpunk" width="100%" alt="Sobre Mí &amp; Enfoque" />
 
 <table align="center" width="100%" border="0">
   <tr>
@@ -50,9 +50,9 @@
         Me apasiona el desarrollo de software moderno con foco en <b>arquitecturas limpias</b>, <b>patrones reactivos</b> y experiencia de usuario fluida. Especializado en el ecosistema <b>Angular + TypeScript</b> y en la integración con backends y servicios cloud en tiempo real.
       </p>
       <p>
-        <img src="./assets/icons/target.svg" width="16" height="16" valign="middle" /> <b>Base Operativa:</b> Utrera, Sevilla, España<br/>
-        <img src="./assets/icons/focus.svg" width="16" height="16" valign="middle" /> <b>Foco Actual:</b> Angular Signals, Microfrontends y Cloud Solutions con Firebase.<br/>
-        <img src="./assets/icons/rocket.svg" width="16" height="16" valign="middle" /> <b>Misión:</b> Crear software robusto, escalable y con impacto real.
+        <img src="./assets/icons/target.svg?v=cyberpunk" width="16" height="16" valign="middle" /> <b>Base Operativa:</b> Utrera, Sevilla, España<br/>
+        <img src="./assets/icons/focus.svg?v=cyberpunk" width="16" height="16" valign="middle" /> <b>Foco Actual:</b> Angular Signals, Microfrontends y Cloud Solutions con Firebase.<br/>
+        <img src="./assets/icons/rocket.svg?v=cyberpunk" width="16" height="16" valign="middle" /> <b>Misión:</b> Crear software robusto, escalable y con impacto real.
       </p>
     </td>
     <td width="45%" valign="middle" align="center">
@@ -68,31 +68,31 @@
 </table>
 
 <p align="center">
-  <img src="./assets/divider.svg" width="100%" />
+  <img src="./assets/divider.svg?v=cyberpunk" width="100%" />
 </p>
 
 <!-- =================================================================== -->
 <!-- SECTION 02: CYBER_ARSENAL // STACK TECNOLÓGICO -->
 <!-- =================================================================== -->
-<img src="./assets/headers/header-tech.svg" width="100%" alt="Stack Tecnológico" />
+<img src="./assets/headers/header-tech.svg?v=cyberpunk" width="100%" alt="Stack Tecnológico" />
 
 <div align="center">
   <table border="0" width="100%">
     <tr>
       <td width="33%" align="center" valign="top">
-        <h4><img src="./assets/icons/frontend.svg" width="16" height="16" valign="middle" /> [ FRONTEND_CORE ]</h4>
+        <h4><img src="./assets/icons/frontend.svg?v=cyberpunk" width="16" height="16" valign="middle" /> [ FRONTEND_CORE ]</h4>
         <img src="https://skillicons.dev/icons?i=angular,ts,js,rxjs,html,css,tailwind,sass&theme=dark&perline=4" alt="Frontend" />
         <br/><br/>
         <sub><b>Angular &bull; TypeScript &bull; JavaScript &bull; RxJS<br/>HTML5 &bull; CSS3 &bull; Tailwind &bull; Sass</b></sub>
       </td>
       <td width="33%" align="center" valign="top">
-        <h4><img src="./assets/icons/backend.svg" width="16" height="16" valign="middle" /> [ BACKEND_RUNTIME ]</h4>
+        <h4><img src="./assets/icons/backend.svg?v=cyberpunk" width="16" height="16" valign="middle" /> [ BACKEND_RUNTIME ]</h4>
         <img src="https://skillicons.dev/icons?i=nodejs,express,php,firebase,mysql,mongodb&theme=dark&perline=3" alt="Backend" />
         <br/><br/>
         <sub><b>Node.js &bull; Express &bull; PHP<br/>Firebase &bull; MySQL &bull; MongoDB</b></sub>
       </td>
       <td width="33%" align="center" valign="top">
-        <h4><img src="./assets/icons/tools.svg" width="16" height="16" valign="middle" /> [ DEVOPS_TOOLING ]</h4>
+        <h4><img src="./assets/icons/tools.svg?v=cyberpunk" width="16" height="16" valign="middle" /> [ DEVOPS_TOOLING ]</h4>
         <img src="https://skillicons.dev/icons?i=git,github,githubactions,vscode,postman,docker,linux&theme=dark&perline=4" alt="Tools" />
         <br/><br/>
         <sub><b>Git &bull; GitHub &bull; GitHub Actions<br/>VS Code &bull; Postman &bull; Docker &bull; Linux</b></sub>
@@ -102,18 +102,18 @@
 </div>
 
 <p align="center">
-  <img src="./assets/divider.svg" width="100%" />
+  <img src="./assets/divider.svg?v=cyberpunk" width="100%" />
 </p>
 
 <!-- =================================================================== -->
 <!-- SECTION 03: OPERATIONS // PROYECTOS DESTACADOS -->
 <!-- =================================================================== -->
-<img src="./assets/headers/header-projects.svg" width="100%" alt="Proyectos Destacados" />
+<img src="./assets/headers/header-projects.svg?v=cyberpunk" width="100%" alt="Proyectos Destacados" />
 
 <table width="100%" border="0">
   <tr>
     <td width="50%" valign="top">
-      <h4><img src="./assets/icons/cart.svg" width="16" height="16" valign="middle" /> Tienda Online // API REST &amp; Web Client</h4>
+      <h4><img src="./assets/icons/cart.svg?v=cyberpunk" width="16" height="16" valign="middle" /> Tienda Online // API REST &amp; Web Client</h4>
       <p>
         <img src="https://img.shields.io/badge/Stack-JS_|_PHP_|_MySQL-00F0FF?style=flat-square&labelColor=0e1020" />
         <img src="https://img.shields.io/badge/Core-Full--Stack-FCEE0A?style=flat-square&labelColor=0e1020" />
@@ -128,7 +128,7 @@
       </p>
     </td>
     <td width="50%" valign="top">
-      <h4><img src="./assets/icons/globe.svg" width="16" height="16" valign="middle" /> Portfolio Personal // Showcase</h4>
+      <h4><img src="./assets/icons/globe.svg?v=cyberpunk" width="16" height="16" valign="middle" /> Portfolio Personal // Showcase</h4>
       <p>
         <img src="https://img.shields.io/badge/Cloud-Firebase_Hosting-FF0055?style=flat-square&logo=firebase&logoColor=white&labelColor=0e1020" />
         <img src="https://img.shields.io/badge/Layout-Responsive_Mobile-00F0FF?style=flat-square&labelColor=0e1020" />
@@ -146,19 +146,84 @@
 </table>
 
 <p align="center">
-  <img src="./assets/divider.svg" width="100%" />
+  <img src="./assets/divider.svg?v=cyberpunk" width="100%" />
 </p>
 
 <!-- =================================================================== -->
 <!-- SECTION 04: TELEMETRY // ESTADÍSTICAS Y RENDIMIENTO -->
 <!-- =================================================================== -->
-<img src="./assets/headers/header-telemetry.svg" width="100%" alt="Telemetría y Rendimiento" />
+<img src="./assets/headers/header-telemetry.svg?v=cyberpunk" width="100%" alt="Telemetría y Rendimiento" />
 
 <p align="center">
-  <img src="./assets/cyber-status.svg" width="100%" alt="Cyber Telemetry Live Node.js Feed" />
+  <img src="./assets/cyber-status.svg?v=cyberpunk" width="100%" alt="Cyber Telemetry Live Node.js Feed" />
 </p>
 
 <div align="center">
+  <!-- TARJETAS DE STATS Y TOP LANGUAGES EN ALTA VELOCIDAD -->
+  <table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center">
+        <img height="180em" src="https://github-readme-stats-fast.vercel.app/api?username=jucagolddev&show_icons=true&hide_border=false&bg_color=05050b&title_color=00f0ff&text_color=cbd5e1&icon_color=fcee0a&border_color=ff0055" alt="GitHub Stats" />
+      </td>
+      <td align="center">
+        <img height="180em" src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=jucagolddev&layout=compact&langs_count=6&hide_border=false&bg_color=05050b&title_color=00f0ff&text_color=cbd5e1&icon_color=fcee0a&border_color=00f0ff" alt="Top Languages" />
+      </td>
+    </tr>
+  </table>
+
+  <br/>
+
+  <!-- RACHA DE ACTIVIDAD CONTINUA (CYBERPUNK NIGHT CITY THEME) -->
+  <img src="https://streak-stats.demolab.com?user=jucagolddev&hide_border=false&background=05050B&ring=00F0FF&fire=FF0055&currStreakLabel=FCEE0A&currStreakNum=00F0FF&sideNums=CBD5E1&sideLabels=94A3B8&dates=64748B&border=FF0055" alt="GitHub Streak" />
+</div>
+
+<p align="center">
+  <img src="./assets/divider.svg?v=cyberpunk" width="100%" />
+</p>
+
+<!-- =================================================================== -->
+<!-- SECTION 05: NEURAL_GRID // ACTIVIDAD ISOMÉTRICA 3D -->
+<!-- =================================================================== -->
+<img src="./assets/headers/header-activity.svg?v=cyberpunk" width="100%" alt="Actividad Isométrica 3D" />
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-season-animate.svg">
+    <img alt="Gráfico 3D de Contribuciones" src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%">
+  </picture>
+</p>
+
+<!-- =================================================================== -->
+<!-- SECTION 06: RUNNER // AUTÓMATA SNAKE DE COMMITS -->
+<!-- =================================================================== -->
+<img src="./assets/headers/header-snake.svg?v=cyberpunk" width="100%" alt="Autómata Snake" />
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jucagolddev/jucagolddev/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jucagolddev/jucagolddev/output/github-contribution-grid-snake.svg">
+    <img alt="Snake animada de commits" src="https://raw.githubusercontent.com/jucagolddev/jucagolddev/output/github-contribution-grid-snake.svg" width="100%">
+  </picture>
+</p>
+
+<p align="center">
+  <img src="./assets/divider.svg?v=cyberpunk" width="100%" />
+</p>
+
+<!-- =================================================================== -->
+<!-- FOOTER // COMMS CHANNEL -->
+<!-- =================================================================== -->
+<div align="center">
+  <p>
+    <b>// INITIATE COMMS // ¿Te interesa colaborar en algún proyecto o conectar profesionalmente?</b><br/>
+    <a href="mailto:jucagolddev@gmail.com">
+      <img src="https://img.shields.io/badge/TRANSMIT_MESSAGE-jucagolddev%40gmail.com-00F0FF?style=for-the-badge&logo=gmail&logoColor=05050b&labelColor=0e1020" />
+    </a>
+  </p>
+
+  <sub>// JUAN CARLOS DORADO LÓPEZ &bull; ARCHITECTURE &amp; CLEAN CODE &bull; AUTOMATED VIA GITHUB ACTIONS //</sub>
+</div>
   <!-- TARJETAS DE STATS Y TOP LANGUAGES EN ALTA VELOCIDAD -->
   <table border="0" cellpadding="0" cellspacing="0">
     <tr>
