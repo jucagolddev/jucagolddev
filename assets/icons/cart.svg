@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="18" height="18" fill="none">
+  <!-- Cyber Cart Wireframe -->
+  <path d="M 2 3 L 4 3 L 6.5 13 L 16 13 L 18 6 L 5 6" stroke="#00f0ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Wheels -->
+  <circle cx="8" cy="17" r="1.5" fill="#fcee0a" />
+  <circle cx="15" cy="17" r="1.5" fill="#ff0055" />
+</svg>

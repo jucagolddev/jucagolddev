@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 52" width="100%" height="52">
+  <defs>
+    <linearGradient id="headBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0e1020" stop-opacity="0.95" />
+      <stop offset="60%" stop-color="#070812" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#05050b" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="headLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fcee0a" />
+      <stop offset="40%" stop-color="#00f0ff" />
+      <stop offset="85%" stop-color="#ff0055" />
+      <stop offset="100%" stop-color="#ff0055" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="headGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .title-hud {
+      font-family: 'Orbitron', 'Rajdhani', 'Fira Code', 'Courier New', monospace, sans-serif;
+      font-weight: 800;
+      font-size: 16px;
+      letter-spacing: 2.5px;
+      fill: #ffffff;
+    }
+    .tag-hud {
+      font-family: 'Fira Code', 'JetBrains Mono', monospace;
+      font-weight: 800;
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      fill: #05050b;
+    }
+    .meta-hud {
+      font-family: 'Fira Code', 'Courier New', monospace;
+      font-size: 10px;
+      letter-spacing: 1px;
+      fill: #00f0ff;
+    }
+  </style>
+
+  <!-- Background Ribbon with Angled End -->
+  <polygon points="5,4 780,4 820,48 5,48" fill="url(#headBg)" stroke="#00f0ff" stroke-width="0.8" stroke-opacity="0.3" />
+
+  <!-- Accent Bottom Cyber Bar -->
+  <line x1="5" y1="48" x2="840" y2="48" stroke="url(#headLineGrad)" stroke-width="2.5" filter="url(#headGlow)" />
+
+  <!-- Yellow Index Tag Box -->
+  <polygon points="12,12 142,12 152,40 12,40" fill="#fcee0a" />
+  <text x="22" y="29" class="tag-hud">SYS_BIO // 01</text>
+
+  <!-- Vector Icon: Terminal / Identity HUD -->
+  <g transform="translate(170, 16)" stroke="#00f0ff" stroke-width="1.8" fill="none">
+    <rect x="0" y="0" width="22" height="18" rx="2" />
+    <path d="M 4 6 L 8 9 L 4 12" stroke="#ff0055" />
+    <line x1="11" y1="12" x2="16" y2="12" stroke="#fcee0a" />
+  </g>
+
+  <!-- Title Text -->
+  <text x="206" y="30" class="title-hud">SOBRE MÍ &amp; ENFOQUE TÉCNICO</text>
+
+  <!-- Right Meta Telemetry Tag -->
+  <text x="750" y="30" class="meta-hud" text-anchor="end">// PROFILE_INITIALIZED</text>
+  <circle cx="765" cy="26" r="3.5" fill="#00f0ff" />
+</svg>

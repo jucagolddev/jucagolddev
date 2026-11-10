@@ -1,33 +1,33 @@
 <!-- =================================================================== -->
-<!-- 🚀 HERO BANNER LOCAL ULTRA-PREMIUM (SIN DEPENDENCIAS EXTERNAS ROTAS) -->
+<!-- HERO BANNER LOCAL // CYBERPUNK NIGHT CITY EDITION -->
 <!-- =================================================================== -->
 <div align="center">
   <img src="./assets/banner.svg" width="100%" alt="Juan Carlos Dorado López - Banner" />
 
   <br/><br/>
 
-  <!-- SUBTÍTULO ANIMADO CON EFECTO TYPING (FIRA CODE) -->
+  <!-- SUBTÍTULO ANIMADO CON EFECTO TYPING (FIRA CODE // HUD SYNTAX) -->
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=2400&pause=1000&color=38BDF8&center=true&vCenter=true&multiline=false&width=800&height=40&lines=%E2%9A%A1+Desarrollador+de+Aplicaciones+Web+%26+Estudiante+de+Ing.+Inform%C3%A1tica;%F0%9F%9A%80+Especialista+en+Arquitectura+Angular+%26+TypeScript;%F0%9F%9B%A0%EF%B8%8F+Full-Stack%3A+Node.js%2C+Firebase%2C+APIs+REST+%26+UI+Reactiva;%F0%9F%93%8D+Utrera%2C+Sevilla%2C+Espa%C3%B1a+%F0%9F%87%AA%F0%9F%87%B8" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=2400&pause=1000&color=00F0FF&center=true&vCenter=true&multiline=false&width=800&height=40&lines=%3E_%20Desarrollador%20Web%20%26%20Estudiante%201%C2%BA%20Ing.%20Inform%C3%A1tica;%2F%2F%20Arquitectura%20Angular%20%26%20Ecosistema%20TypeScript;%3E_%20Full-Stack%3A%20Node.js%2C%20Firebase%2C%20APIs%20REST%20%26%20UI;%2F%2F%20Base%20Operativa%3A%20Utrera%2C%20Sevilla%2C%20Espa%C3%B1a%20%5BES%5D" alt="Typing SVG" />
   </a>
 
   <br/>
 
-  <!-- BADGES DE CONTACTO Y TELEMETRÍA -->
+  <!-- BADGES DE CONTACTO Y TELEMETRÍA (NIGHT CITY COLOR PALETTE) -->
   <p align="center">
     <a href="https://linkedin.com/in/jucagolddev" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+      <img src="https://img.shields.io/badge/LinkedIn-00F0FF?style=for-the-badge&logo=linkedin&logoColor=05050b&labelColor=0e1020" alt="LinkedIn" />
     </a>
     <a href="https://porfolio-juancarlosdoradolopez.web.app/" target="_blank">
-      <img src="https://img.shields.io/badge/Portfolio_Web-FF2D20?style=for-the-badge&logo=firebase&logoColor=white" alt="Portfolio" />
+      <img src="https://img.shields.io/badge/Portfolio_Web-FF0055?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0e1020" alt="Portfolio" />
     </a>
     <a href="mailto:jucagolddev@gmail.com" target="_blank">
-      <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+      <img src="https://img.shields.io/badge/Comms_Email-FCEE0A?style=for-the-badge&logo=gmail&logoColor=05050b&labelColor=0e1020" alt="Gmail" />
     </a>
     <a href="https://github.com/jucagolddev?tab=followers" target="_blank">
-      <img src="https://img.shields.io/github/followers/jucagolddev?label=Seguidores&style=for-the-badge&logo=github&color=0D1117&logoColor=38BDF8" alt="GitHub Followers" />
+      <img src="https://img.shields.io/github/followers/jucagolddev?label=Followers&style=for-the-badge&logo=github&color=00F0FF&logoColor=00F0FF&labelColor=0e1020" alt="GitHub Followers" />
     </a>
-    <img src="https://komarev.com/ghpvc/?username=jucagolddev&label=Visitas&color=38BDF8&style=for-the-badge&labelColor=0D1117" alt="Profile Views" />
+    <img src="https://komarev.com/ghpvc/?username=jucagolddev&label=Telemetry_Views&color=FCEE0A&style=for-the-badge&labelColor=0e1020" alt="Profile Views" />
   </p>
 </div>
 
@@ -36,12 +36,13 @@
 </p>
 
 <!-- =================================================================== -->
-<!-- 👤 SOBRE MÍ & ENFOQUE PROFESIONAL -->
+<!-- SECTION 01: SYS_BIO // SOBRE MÍ & ENFOQUE -->
 <!-- =================================================================== -->
+<img src="./assets/headers/header-about.svg" width="100%" alt="Sobre Mí &amp; Enfoque" />
+
 <table align="center" width="100%" border="0">
   <tr>
     <td width="55%" valign="top">
-      <h3>👨‍💻 Sobre Mí</h3>
       <p>
         ¡Hola! Soy <b>Juan Carlos Dorado López</b>, desarrollador de aplicaciones web y estudiante de <b>1º Grado en Ingeniería Informática</b> afincado en Utrera (Sevilla).
       </p>
@@ -49,18 +50,18 @@
         Me apasiona el desarrollo de software moderno con foco en <b>arquitecturas limpias</b>, <b>patrones reactivos</b> y experiencia de usuario fluida. Especializado en el ecosistema <b>Angular + TypeScript</b> y en la integración con backends y servicios cloud en tiempo real.
       </p>
       <p>
-        📍 <b>Ubicación:</b> Utrera, Sevilla, España<br/>
-        🎯 <b>Foco actual:</b> Angular Signals, Microfrontends y Cloud Solutions con Firebase.<br/>
-        🚀 <b>Objetivo:</b> Crear software robusto, escalable y con impacto real.
+        <img src="./assets/icons/target.svg" width="16" height="16" valign="middle" /> <b>Base Operativa:</b> Utrera, Sevilla, España<br/>
+        <img src="./assets/icons/focus.svg" width="16" height="16" valign="middle" /> <b>Foco Actual:</b> Angular Signals, Microfrontends y Cloud Solutions con Firebase.<br/>
+        <img src="./assets/icons/rocket.svg" width="16" height="16" valign="middle" /> <b>Misión:</b> Crear software robusto, escalable y con impacto real.
       </p>
     </td>
     <td width="45%" valign="middle" align="center">
       <a href="https://porfolio-juancarlosdoradolopez.web.app/" target="_blank">
-        <img src="https://img.shields.io/badge/Visitar_Mi_Portfolio_Online-FF2D20?style=for-the-badge&logo=firebase&logoColor=white" width="90%" />
+        <img src="https://img.shields.io/badge/LAUNCH_PORTFOLIO-OPEN_WEB-FF0055?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0e1020" width="92%" />
       </a>
       <br/><br/>
       <a href="mailto:jucagolddev@gmail.com">
-        <img src="https://img.shields.io/badge/¿Hablamos%3F-Contactar_por_Email-38BDF8?style=for-the-badge&logo=gmail&logoColor=white" width="90%" />
+        <img src="https://img.shields.io/badge/ESTABLISH_COMMS-EMAIL-00F0FF?style=for-the-badge&logo=gmail&logoColor=05050b&labelColor=0e1020" width="92%" />
       </a>
     </td>
   </tr>
@@ -71,30 +72,30 @@
 </p>
 
 <!-- =================================================================== -->
-<!-- 🛠️ ARSENAL TECNOLÓGICO Y HERRAMIENTAS -->
+<!-- SECTION 02: CYBER_ARSENAL // STACK TECNOLÓGICO -->
 <!-- =================================================================== -->
-### 🛠️ Stack Tecnológico & Herramientas
+<img src="./assets/headers/header-tech.svg" width="100%" alt="Stack Tecnológico" />
 
 <div align="center">
   <table border="0" width="100%">
     <tr>
       <td width="33%" align="center" valign="top">
-        <h4>🎨 Frontend Reactivo</h4>
-        <img src="https://skillicons.dev/icons?i=angular,ts,js,rxjs,html,css,tailwind,sass&perline=4" alt="Frontend" />
+        <h4><img src="./assets/icons/frontend.svg" width="16" height="16" valign="middle" /> [ FRONTEND_CORE ]</h4>
+        <img src="https://skillicons.dev/icons?i=angular,ts,js,rxjs,html,css,tailwind,sass&theme=dark&perline=4" alt="Frontend" />
         <br/><br/>
-        <sub><b>Angular · TypeScript · JavaScript · RxJS<br/>HTML5 · CSS3 · Tailwind · Sass</b></sub>
+        <sub><b>Angular &bull; TypeScript &bull; JavaScript &bull; RxJS<br/>HTML5 &bull; CSS3 &bull; Tailwind &bull; Sass</b></sub>
       </td>
       <td width="33%" align="center" valign="top">
-        <h4>⚙️ Backend & Base de Datos</h4>
-        <img src="https://skillicons.dev/icons?i=nodejs,express,php,firebase,mysql,mongodb&perline=3" alt="Backend" />
+        <h4><img src="./assets/icons/backend.svg" width="16" height="16" valign="middle" /> [ BACKEND_RUNTIME ]</h4>
+        <img src="https://skillicons.dev/icons?i=nodejs,express,php,firebase,mysql,mongodb&theme=dark&perline=3" alt="Backend" />
         <br/><br/>
-        <sub><b>Node.js · Express · PHP<br/>Firebase · MySQL · MongoDB</b></sub>
+        <sub><b>Node.js &bull; Express &bull; PHP<br/>Firebase &bull; MySQL &bull; MongoDB</b></sub>
       </td>
       <td width="33%" align="center" valign="top">
-        <h4>🚀 Entorno, CI/CD & Herramientas</h4>
-        <img src="https://skillicons.dev/icons?i=git,github,githubactions,vscode,postman,docker,linux&perline=4" alt="Tools" />
+        <h4><img src="./assets/icons/tools.svg" width="16" height="16" valign="middle" /> [ DEVOPS_TOOLING ]</h4>
+        <img src="https://skillicons.dev/icons?i=git,github,githubactions,vscode,postman,docker,linux&theme=dark&perline=4" alt="Tools" />
         <br/><br/>
-        <sub><b>Git · GitHub · GitHub Actions<br/>VS Code · Postman · Docker · Linux</b></sub>
+        <sub><b>Git &bull; GitHub &bull; GitHub Actions<br/>VS Code &bull; Postman &bull; Docker &bull; Linux</b></sub>
       </td>
     </tr>
   </table>
@@ -105,39 +106,39 @@
 </p>
 
 <!-- =================================================================== -->
-<!-- 🚀 PROYECTOS DESTACADOS REALES -->
+<!-- SECTION 03: OPERATIONS // PROYECTOS DESTACADOS -->
 <!-- =================================================================== -->
-### 🚀 Proyectos Destacados en Producción
+<img src="./assets/headers/header-projects.svg" width="100%" alt="Proyectos Destacados" />
 
 <table width="100%" border="0">
   <tr>
     <td width="50%" valign="top">
-      <h4>🛒 Tienda Online con API REST & Cliente Web</h4>
+      <h4><img src="./assets/icons/cart.svg" width="16" height="16" valign="middle" /> Tienda Online // API REST &amp; Web Client</h4>
       <p>
-        <img src="https://img.shields.io/badge/Stack-JavaScript_|_PHP_|_MySQL-38BDF8?style=flat-square" />
-        <img src="https://img.shields.io/badge/Tipo-Full--Stack-success?style=flat-square" />
+        <img src="https://img.shields.io/badge/Stack-JS_|_PHP_|_MySQL-00F0FF?style=flat-square&labelColor=0e1020" />
+        <img src="https://img.shields.io/badge/Core-Full--Stack-FCEE0A?style=flat-square&labelColor=0e1020" />
       </p>
       <p>
         Aplicación web completa inspirada en <b>PcComponentes</b>. Incluye catálogo interactivo, consumo de <b>API RESTful</b>, gestión de carrito persistente mediante <code>LocalStorage</code> y backend con PHP/MySQL.
       </p>
       <p>
         <a href="https://github.com/jucagolddev/TiendaOnlineConApiRestYClienteHtml" target="_blank">
-          <img src="https://img.shields.io/badge/Ver_Repositorio-181717?style=for-the-badge&logo=github&logoColor=white" />
+          <img src="https://img.shields.io/badge/REPO_CODE-EXPLORE_SOURCE-00F0FF?style=for-the-badge&logo=github&logoColor=05050b&labelColor=0e1020" />
         </a>
       </p>
     </td>
     <td width="50%" valign="top">
-      <h4>🌐 Portfolio Personal & Showcase</h4>
+      <h4><img src="./assets/icons/globe.svg" width="16" height="16" valign="middle" /> Portfolio Personal // Showcase</h4>
       <p>
-        <img src="https://img.shields.io/badge/Hosting-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" />
-        <img src="https://img.shields.io/badge/Responsive-Mobile_First-06B6D4?style=flat-square" />
+        <img src="https://img.shields.io/badge/Cloud-Firebase_Hosting-FF0055?style=flat-square&logo=firebase&logoColor=white&labelColor=0e1020" />
+        <img src="https://img.shields.io/badge/Layout-Responsive_Mobile-00F0FF?style=flat-square&labelColor=0e1020" />
       </p>
       <p>
-        Sitio web personal desplegado en <b>Firebase Hosting</b>. Muestra proyectos, trayectoria y habilidades con diseño moderno, alto rendimiento de carga y adaptación a dispositivos móviles.
+        Plataforma web personal desplegada en <b>Firebase Cloud</b>. Demostración interactiva de proyectos y trayectoria con microinteracciones modernas y máximo rendimiento de renderizado.
       </p>
       <p>
         <a href="https://porfolio-juancarlosdoradolopez.web.app/" target="_blank">
-          <img src="https://img.shields.io/badge/Abrir_Portfolio_Web-FF2D20?style=for-the-badge&logo=googlechrome&logoColor=white" />
+          <img src="https://img.shields.io/badge/LIVE_DEMO-OPEN_SHOWCASE-FF0055?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0e1020" />
         </a>
       </p>
     </td>
@@ -149,27 +150,27 @@
 </p>
 
 <!-- =================================================================== -->
-<!-- 📊 TELEMETRÍA Y ESTADÍSTICAS EN VIVO -->
+<!-- SECTION 04: TELEMETRY // ESTADÍSTICAS Y RENDIMIENTO -->
 <!-- =================================================================== -->
-### 📊 Telemetría y Rendimiento en GitHub
+<img src="./assets/headers/header-telemetry.svg" width="100%" alt="Telemetría y Rendimiento" />
 
 <div align="center">
   <!-- TARJETAS DE STATS Y TOP LANGUAGES EN ALTA VELOCIDAD -->
   <table border="0" cellpadding="0" cellspacing="0">
     <tr>
       <td align="center">
-        <img height="180em" src="https://github-readme-stats-fast.vercel.app/api?username=jucagolddev&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38bdf8&text_color=94a3b8&icon_color=38bdf8" alt="GitHub Stats" />
+        <img height="180em" src="https://github-readme-stats-fast.vercel.app/api?username=jucagolddev&show_icons=true&hide_border=false&bg_color=05050b&title_color=00f0ff&text_color=cbd5e1&icon_color=fcee0a&border_color=ff0055" alt="GitHub Stats" />
       </td>
       <td align="center">
-        <img height="180em" src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=jucagolddev&layout=compact&langs_count=6&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=38bdf8&text_color=94a3b8" alt="Top Languages" />
+        <img height="180em" src="https://github-readme-stats-fast.vercel.app/api/top-langs?username=jucagolddev&layout=compact&langs_count=6&hide_border=false&bg_color=05050b&title_color=00f0ff&text_color=cbd5e1&icon_color=fcee0a&border_color=00f0ff" alt="Top Languages" />
       </td>
     </tr>
   </table>
 
   <br/>
 
-  <!-- RACHA DE ACTIVIDAD CONTINUA -->
-  <img src="https://streak-stats.demolab.com?user=jucagolddev&theme=tokyonight&hide_border=true&background=0D1117&ring=38BDF8&fire=F59E0B&currStreakLabel=38BDF8" alt="GitHub Streak" />
+  <!-- RACHA DE ACTIVIDAD CONTINUA (CYBERPUNK NIGHT CITY THEME) -->
+  <img src="https://streak-stats.demolab.com?user=jucagolddev&hide_border=false&background=05050B&ring=00F0FF&fire=FF0055&currStreakLabel=FCEE0A&currStreakNum=00F0FF&sideNums=CBD5E1&sideLabels=94A3B8&dates=64748B&border=FF0055" alt="GitHub Streak" />
 </div>
 
 <p align="center">
@@ -177,9 +178,9 @@
 </p>
 
 <!-- =================================================================== -->
-<!-- 🏙️ ACTIVIDAD DE COMMITS EN 3D & SNAKE ANIMADA -->
+<!-- SECTION 05: NEURAL_GRID // ACTIVIDAD ISOMÉTRICA 3D -->
 <!-- =================================================================== -->
-### 🏙️ Visualización Isométrica 3D de Contribuciones
+<img src="./assets/headers/header-activity.svg" width="100%" alt="Actividad Isométrica 3D" />
 
 <p align="center">
   <picture>
@@ -189,7 +190,10 @@
   </picture>
 </p>
 
-### 🐍 Snake Autómata Recorriendo los Commits
+<!-- =================================================================== -->
+<!-- SECTION 06: RUNNER // AUTÓMATA SNAKE DE COMMITS -->
+<!-- =================================================================== -->
+<img src="./assets/headers/header-snake.svg" width="100%" alt="Autómata Snake" />
 
 <p align="center">
   <picture>
@@ -204,15 +208,15 @@
 </p>
 
 <!-- =================================================================== -->
-<!-- 💬 FOOTER & CONTACTO -->
+<!-- FOOTER // COMMS CHANNEL -->
 <!-- =================================================================== -->
 <div align="center">
   <p>
-    <b>¿Te interesa colaborar en algún proyecto o conectar profesionalmente?</b><br/>
+    <b>// INITIATE COMMS // ¿Te interesa colaborar en algún proyecto o conectar profesionalmente?</b><br/>
     <a href="mailto:jucagolddev@gmail.com">
-      <b>Envíame un correo a jucagolddev@gmail.com ➔</b>
+      <img src="https://img.shields.io/badge/TRANSMIT_MESSAGE-jucagolddev%40gmail.com-00F0FF?style=for-the-badge&logo=gmail&logoColor=05050b&labelColor=0e1020" />
     </a>
   </p>
 
-  <sub>© Juan Carlos Dorado López · Construido con código limpio y automatizaciones de GitHub Actions</sub>
+  <sub>// JUAN CARLOS DORADO LÓPEZ &bull; ARCHITECTURE &amp; CLEAN CODE &bull; AUTOMATED VIA GITHUB ACTIONS //</sub>
 </div>
