@@ -85,21 +85,21 @@
     <!-- Metric 1: Public Repos -->
     <g transform="translate(0, 0)">
       <text x="0" y="0" fill="#94a3b8" class="mono-regular" font-size="10">REPOSITORIOS</text>
-      <text x="0" y="25" fill="#00f0ff" class="val-accent">12</text>
+      <text x="0" y="25" fill="#00f0ff" class="val-accent">44</text>
       <text x="50" y="25" fill="#475569" class="mono-regular" font-size="10">// REPOS</text>
     </g>
 
     <!-- Metric 2: Stars -->
     <g transform="translate(160, 0)">
       <text x="0" y="0" fill="#94a3b8" class="mono-regular" font-size="10">ESTRELLAS GITHUB</text>
-      <text x="0" y="25" fill="#fcee0a" class="val-accent">0</text>
+      <text x="0" y="25" fill="#fcee0a" class="val-accent">3</text>
       <text x="35" y="25" fill="#475569" class="mono-regular" font-size="10">// STARS</text>
     </g>
 
     <!-- Metric 3: Followers -->
     <g transform="translate(320, 0)">
       <text x="0" y="0" fill="#94a3b8" class="mono-regular" font-size="10">NETWORK FOLLOWERS</text>
-      <text x="0" y="25" fill="#ff0055" class="val-accent">8</text>
+      <text x="0" y="25" fill="#ff0055" class="val-accent">2</text>
       <text x="35" y="25" fill="#475569" class="mono-regular" font-size="10">// PEERS</text>
     </g>
 
@@ -107,7 +107,7 @@
     <g transform="translate(480, 0)">
       <text x="0" y="0" fill="#94a3b8" class="mono-regular" font-size="10">RUNTIME &amp; LOCATION</text>
       <text x="0" y="16" fill="#cbd5e1" class="mono-bold" font-size="11">NODE.JS // SEVILLA.ES</text>
-      <text x="0" y="32" fill="#64748b" class="mono-regular" font-size="9">PING: 10/11/2026, 12:36 CET</text>
+      <text x="0" y="32" fill="#64748b" class="mono-regular" font-size="9">PING: 10/11/2026, 12:37 CET</text>
     </g>
   </g>
 
@@ -116,7 +116,7 @@
     <!-- Scope label -->
     <text x="660" y="55" fill="#475569" class="mono-regular" font-size="9">// OSCILLOSCOPE_STREAM</text>
     <!-- Scope line -->
-    <path d="M 660.0 78.5 L 666.7 79.0 L 673.3 80.6 L 680.0 80.2 L 686.7 82.0 L 693.3 78.7 L 700.0 78.6 L 706.7 80.7 L 713.3 81.0 L 720.0 90.3 L 726.7 94.1 L 733.3 96.0 L 740.0 87.8 L 746.7 76.0 L 753.3 65.2 L 760.0 62.3 L 766.7 65.4 L 773.3 76.0 L 780.0 87.9 L 786.7 96.7 L 793.3 94.9 L 800.0 88.9 L 806.7 81.4 L 813.3 78.4 L 820.0 81.8 L 826.7 78.8 L 833.3 78.4 L 840.0 80.4 L 846.7 81.6 L 853.3 80.4 L 860.0 79.3" fill="none" stroke="#00f0ff" stroke-width="1.8" filter="url(#neonGlow)" />
+    <path d="M 660.0 80.0 L 666.7 79.3 L 673.3 81.1 L 680.0 81.7 L 686.7 79.2 L 693.3 79.3 L 700.0 81.1 L 706.7 79.5 L 713.3 80.2 L 720.0 90.9 L 726.7 93.7 L 733.3 95.6 L 740.0 86.3 L 746.7 76.9 L 753.3 65.9 L 760.0 65.1 L 766.7 67.4 L 773.3 76.1 L 780.0 86.1 L 786.7 93.3 L 793.3 94.4 L 800.0 88.1 L 806.7 81.2 L 813.3 80.7 L 820.0 80.4 L 826.7 78.1 L 833.3 81.6 L 840.0 81.7 L 846.7 81.2 L 853.3 81.5 L 860.0 79.9" fill="none" stroke="#00f0ff" stroke-width="1.8" filter="url(#neonGlow)" />
   </g>
 
   <!-- Flanking Tech Corner Accents -->
