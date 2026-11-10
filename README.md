@@ -2,7 +2,7 @@
 <!-- HERO BANNER LOCAL // CYBERPUNK NIGHT CITY EDITION -->
 <!-- =================================================================== -->
 <div align="center">
-  <img src="./assets/banner.svg" width="100%" alt="Juan Carlos Dorado López - Banner" />
+  <img src="https://raw.githubusercontent.com/jucagolddev/jucagolddev/refs/heads/main/assets/banner.svg" width="100%" alt="Juan Carlos Dorado López - Banner" />
 
   <br/><br/>
 
