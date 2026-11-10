@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 260" width="100%" height="260">
+  <defs>
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardPortBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05060f" />
+      <stop offset="50%" stop-color="#090b1e" />
+      <stop offset="100%" stop-color="#140c26" />
+    </linearGradient>
+
+    <!-- Glowing Magenta Border Gradient -->
+    <linearGradient id="portBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff0055" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#7928ca" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#fcee0a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Chip Background -->
+    <linearGradient id="chipBgPort" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1c1028" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#090a18" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Tech Grid Pattern -->
+    <pattern id="cardGridPort" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M 18 0 L 0 0 0 18" fill="none" stroke="#ff0055" stroke-width="0.5" stroke-opacity="0.06" />
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="neonGlowPort" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .card-title {
+      font-family: 'Century Gothic', 'Trebuchet MS', 'Segoe UI', system-ui, sans-serif;
+      font-weight: 900;
+      font-size: 16px;
+      letter-spacing: 2px;
+      fill: #ffffff;
+    }
+    .card-subtitle {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', monospace;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      fill: #ff0055;
+    }
+    .card-desc {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 11.5px;
+      line-height: 1.5;
+      fill: #cbd5e1;
+    }
+    .card-meta {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .chip-label {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+    }
+    .btn-text-port {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      fill: #ff0055;
+    }
+    .pulse-dot {
+      animation: pulsePort 1.8s infinite ease-in-out;
+    }
+    @keyframes pulsePort {
+      0% { opacity: 0.3; }
+      50% { opacity: 1; }
+      100% { opacity: 0.3; }
+    }
+  </style>
+
+  <!-- Container Box with Chamfered Corners -->
+  <polygon points="16,6 424,6 434,16 434,244 424,254 16,254 6,244 6,16" fill="url(#cardPortBg)" stroke="url(#portBorderGrad)" stroke-width="1.3" />
+
+  <!-- Inner Cyber Grid -->
+  <polygon points="16,6 424,6 434,16 434,244 424,254 16,254 6,244 6,16" fill="url(#cardGridPort)" />
+
+  <!-- Top HUD Ribbon -->
+  <g transform="translate(18, 22)">
+    <!-- Category Pill -->
+    <polygon points="0,-10 122,-10 130,8 0,8" fill="#ff0055" />
+    <text x="8" y="3" fill="#ffffff" class="card-meta" font-weight="800">MISSION // OPS_02</text>
+
+    <!-- Status Beacon -->
+    <circle cx="388" cy="-1" r="3.5" fill="#00ff66" class="pulse-dot" />
+    <text x="378" y="2.5" text-anchor="end" fill="#00ff66" class="card-meta">STATUS: DEPLOYED_PROD</text>
+  </g>
+
+  <!-- Title & Subtitle Group -->
+  <g transform="translate(24, 62)">
+    <!-- Globe / Web Icon in Magenta Square -->
+    <rect x="0" y="0" width="30" height="30" rx="4" fill="#200d1e" stroke="#ff0055" stroke-width="1" />
+    <g transform="translate(5, 5)" stroke="#ff0055" stroke-width="1.5" fill="none">
+      <circle cx="10" cy="10" r="8" />
+      <line x1="2" y1="10" x2="18" y2="10" />
+      <path d="M 10 2 C 7 5 5 10 5 10 C 5 10 7 15 10 18" />
+      <path d="M 10 2 C 13 5 15 10 15 10 C 15 10 13 15 10 18" />
+    </g>
+
+    <!-- Title Texts -->
+    <text x="40" y="14" class="card-title">PORTFOLIO // SHOWCASE CLOUD</text>
+    <text x="40" y="27" class="card-subtitle">PERSONAL ARCHITECTURE PLATFORM</text>
+  </g>
+
+  <!-- Description Body -->
+  <g transform="translate(24, 114)">
+    <text x="0" y="0" class="card-desc">
+      <tspan x="0" dy="0">Showcase profesional personal desplegado en la infraestructura</tspan>
+      <tspan x="0" dy="16">global de Google Firebase. Microinteracciones modernas,</tspan>
+      <tspan x="0" dy="16">diseño responsive y máximo rendimiento de renderizado.</tspan>
+    </text>
+  </g>
+
+  <!-- Tech Chips Group -->
+  <g transform="translate(24, 182)">
+    <!-- Chip 1: Firebase -->
+    <g transform="translate(0, 0)">
+      <polygon points="-4,-10 106,-10 112,10 -4,10" fill="url(#chipBgPort)" stroke="#ff0055" stroke-width="0.9" />
+      <circle cx="6" cy="0" r="2.5" fill="#ff0055" />
+      <text x="14" y="3" fill="#fda4af" class="chip-label">FIREBASE CLOUD</text>
+    </g>
+
+    <!-- Chip 2: Responsive -->
+    <g transform="translate(122, 0)">
+      <polygon points="-4,-10 96,-10 102,10 -4,10" fill="url(#chipBgPort)" stroke="#00f0ff" stroke-width="0.9" />
+      <circle cx="6" cy="0" r="2.5" fill="#00f0ff" />
+      <text x="14" y="3" fill="#a5f3fc" class="chip-label">RESPONSIVE UI</text>
+    </g>
+
+    <!-- Chip 3: Clean Arch -->
+    <g transform="translate(230, 0)">
+      <polygon points="-4,-10 82,-10 88,10 -4,10" fill="url(#chipBgPort)" stroke="#fcee0a" stroke-width="0.9" />
+      <circle cx="6" cy="0" r="2.5" fill="#fcee0a" />
+      <text x="14" y="3" fill="#fef08a" class="chip-label">CLEAN ARCH</text>
+    </g>
+  </g>
+
+  <!-- Bottom Action Button Pill -->
+  <g transform="translate(24, 226)">
+    <polygon points="0,-12 384,-12 392,12 8,12" fill="#140816" stroke="#ff0055" stroke-width="1.2" filter="url(#neonGlowPort)" />
+    <text x="196" y="4" text-anchor="middle" class="btn-text-port">
+      [ ⚡ LAUNCH_SHOWCASE // OPEN WEB APP → ]
+    </text>
+  </g>
+
+  <!-- Corner Brackets -->
+  <g stroke="#00f0ff" stroke-width="1.3" fill="none" opacity="0.75">
+    <path d="M 10 24 L 10 12 L 22 12" />
+    <path d="M 430 236 L 430 248 L 418 248" />
+  </g>
+</svg>

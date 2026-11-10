@@ -29,6 +29,10 @@
     </a>
     <img src="https://komarev.com/ghpvc/?username=jucagolddev&label=Telemetry_Views&color=FCEE0A&style=for-the-badge&labelColor=0e1020" alt="Profile Views" />
   </p>
+
+  <p align="center">
+    <img src="./assets/cyber-audio-player.svg" width="100%" alt="Cyberpunk Neural Radio Audio Player // Night City Synthwave" />
+  </p>
 </div>
 
 <p align="center">
@@ -90,6 +94,12 @@
       </td>
     </tr>
   </table>
+
+  <br/>
+
+  <p align="center">
+    <img src="./assets/cyber-skills-matrix.svg" width="100%" alt="Cyberpunk Neural Competency Matrix" />
+  </p>
 </div>
 
 <p align="center">
@@ -101,37 +111,17 @@
 <!-- =================================================================== -->
 <img src="./assets/headers/header-projects.svg" width="100%" alt="Proyectos Destacados" />
 
-<table width="100%" border="0" cellpadding="10" cellspacing="0">
+<table width="100%" border="0" cellpadding="0" cellspacing="6">
   <tr>
-    <td width="50%" valign="top">
-      <h4><img src="./assets/icons/cart.svg" width="16" height="16" valign="middle" /> Tienda Online // API REST &amp; Web Client</h4>
-      <p>
-        <img src="https://img.shields.io/badge/Stack-JS_|_PHP_|_MySQL-00F0FF?style=flat-square&labelColor=0e1020" />
-        <img src="https://img.shields.io/badge/Architecture-RESTful_API-FCEE0A?style=flat-square&labelColor=0e1020" />
-      </p>
-      <p>
-        Aplicación web completa con catálogo interactivo inspirada en el flujo de comercio electrónico moderno. Consume una <b>API RESTful personalizada</b>, gestiona carrito persistente en <code>LocalStorage</code> y almacena datos en PHP/MySQL.
-      </p>
-      <p>
-        <a href="https://github.com/jucagolddev/TiendaOnlineConApiRestYClienteHtml" target="_blank">
-          <img src="https://img.shields.io/badge/REPO_CODE-EXPLORE_SOURCE-00F0FF?style=for-the-badge&logo=github&logoColor=05050b&labelColor=0e1020" />
-        </a>
-      </p>
+    <td width="50%" align="center" valign="top">
+      <a href="https://github.com/jucagolddev/TiendaOnlineConApiRestYClienteHtml" target="_blank">
+        <img src="./assets/card-project-tienda.svg" width="100%" alt="Tienda Online // API REST &amp; Web Client" />
+      </a>
     </td>
-    <td width="50%" valign="top">
-      <h4><img src="./assets/icons/globe.svg" width="16" height="16" valign="middle" /> Portfolio Personal // Showcase Cloud</h4>
-      <p>
-        <img src="https://img.shields.io/badge/Cloud-Firebase_Hosting-FF0055?style=flat-square&logo=firebase&logoColor=white&labelColor=0e1020" />
-        <img src="https://img.shields.io/badge/Layout-Responsive_Mobile-00F0FF?style=flat-square&labelColor=0e1020" />
-      </p>
-      <p>
-        Showcase profesional personal desplegado en la infraestructura global de <b>Firebase Cloud</b>. Diseño interactivo enfocado en accesibilidad, microinteracciones y alto rendimiento visual.
-      </p>
-      <p>
-        <a href="https://porfolio-juancarlosdoradolopez.web.app/" target="_blank">
-          <img src="https://img.shields.io/badge/LIVE_DEMO-OPEN_SHOWCASE-FF0055?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0e1020" />
-        </a>
-      </p>
+    <td width="50%" align="center" valign="top">
+      <a href="https://porfolio-juancarlosdoradolopez.web.app/" target="_blank">
+        <img src="./assets/card-project-portfolio.svg" width="100%" alt="Portfolio Personal // Showcase Cloud" />
+      </a>
     </td>
   </tr>
 </table>
@@ -207,12 +197,18 @@
 <!-- =================================================================== -->
 <div align="center">
   <p>
-    <b>// INITIATE COMMS // ¿Te interesa colaborar en algún proyecto o conectar profesionalmente?</b><br/>
     <a href="mailto:jucagolddev@gmail.com">
       <img src="https://img.shields.io/badge/TRANSMIT_MESSAGE-jucagolddev%40gmail.com-00F0FF?style=for-the-badge&logo=gmail&logoColor=05050b&labelColor=0e1020" alt="Transmit Message" />
     </a>
+    &nbsp;&nbsp;
+    <a href="https://linkedin.com/in/jucagolddev" target="_blank">
+      <img src="https://img.shields.io/badge/NEURAL_NETWORK-LINKEDIN-FF0055?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0e1020" alt="LinkedIn" />
+    </a>
   </p>
 
-<sub>// JUAN CARLOS DORADO LÓPEZ &bull; ARCHITECTURE &amp; CLEAN CODE &bull; AUTOMATED VIA GITHUB ACTIONS //</sub>
-
+  <p align="center">
+    <a href="mailto:jucagolddev@gmail.com">
+      <img src="./assets/cyber-footer.svg" width="100%" alt="Cyberpunk Netrunner Signature &amp; Security Termination Footer" />
+    </a>
+  </p>
 </div>

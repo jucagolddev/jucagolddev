@@ -1,0 +1,292 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 270" width="100%" height="270">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="matrixBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05060f" />
+      <stop offset="45%" stop-color="#090b1c" />
+      <stop offset="100%" stop-color="#0e1026" />
+    </linearGradient>
+
+    <!-- Border Gradient -->
+    <linearGradient id="matrixBorderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.9" />
+      <stop offset="35%" stop-color="#7928ca" stop-opacity="0.6" />
+      <stop offset="70%" stop-color="#ff0055" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#fcee0a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Bar Gradients for Skills -->
+    <linearGradient id="barGradCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00a8ff" />
+      <stop offset="70%" stop-color="#00f0ff" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+
+    <linearGradient id="barGradMagenta" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7928ca" />
+      <stop offset="70%" stop-color="#ff0055" />
+      <stop offset="100%" stop-color="#ff7399" />
+    </linearGradient>
+
+    <linearGradient id="barGradYellow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff5500" />
+      <stop offset="70%" stop-color="#fcee0a" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+
+    <!-- Tech Grid Pattern -->
+    <pattern id="matrixGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#00f0ff" stroke-width="0.5" stroke-opacity="0.05" />
+    </pattern>
+
+    <!-- Caution Stripe Pattern -->
+    <pattern id="matrixCaution" width="10" height="10" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#fcee0a" stroke-width="2.5" stroke-opacity="0.8" />
+      <line x1="5" y1="0" x2="5" y2="10" stroke="#05060f" stroke-width="2.5" stroke-opacity="0.8" />
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="matrixGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .matrix-title {
+      font-family: 'Century Gothic', 'Trebuchet MS', 'Segoe UI', system-ui, sans-serif;
+      font-weight: 900;
+      font-size: 14px;
+      letter-spacing: 2px;
+      fill: #ffffff;
+    }
+    .matrix-meta {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+    }
+    .skill-name {
+      font-family: 'Century Gothic', 'Trebuchet MS', 'Segoe UI', system-ui, sans-serif;
+      font-weight: 700;
+      font-size: 12.5px;
+      letter-spacing: 1.2px;
+      fill: #ffffff;
+    }
+    .skill-sub {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      fill: #94a3b8;
+    }
+    .skill-pct {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', monospace;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+    .pulse-glow {
+      animation: pulseGlowAnim 2s infinite ease-in-out;
+    }
+    @keyframes pulseGlowAnim {
+      0% { opacity: 0.4; }
+      50% { opacity: 1; }
+      100% { opacity: 0.4; }
+    }
+  </style>
+
+  <!-- Main Background Container with Chamfered Corners -->
+  <polygon points="18,4 882,4 896,18 896,252 882,266 18,266 4,252 4,18" fill="url(#matrixBg)" stroke="url(#matrixBorderGrad)" stroke-width="1.3" />
+
+  <!-- Inner Tech Grid Overlay -->
+  <polygon points="18,4 882,4 896,18 896,252 882,266 18,266 4,252 4,18" fill="url(#matrixGrid)" />
+
+  <!-- Sci-Fi Corner Brackets -->
+  <g stroke="#00f0ff" stroke-width="1.5" fill="none" opacity="0.7">
+    <path d="M 890 14 L 890 26 L 878 26" />
+    <path d="M 10 256 L 10 244 L 22 244" />
+  </g>
+
+  <!-- Left Caution Accent -->
+  <polygon points="4,18 4,56 12,48 12,18" fill="url(#matrixCaution)" />
+
+  <!-- Top Header Telemetry Bar -->
+  <g transform="translate(24, 22)">
+    <!-- Header Title & Subtitle -->
+    <text x="0" y="0" class="matrix-title">
+      <tspan fill="#00f0ff">//</tspan> NEURAL_COMPETENCY_MATRIX <tspan fill="#fcee0a">//</tspan> OVERCLOCKED RUNTIME
+    </text>
+    <text x="0" y="15" fill="#64748b" class="matrix-meta">KERNEL v4.9.2 • REAL-TIME SYNAPSE LOAD BENCHMARK</text>
+
+    <!-- Right Header Badges -->
+    <polygon points="730,-12 856,-12 864,4 738,4" fill="#141732" stroke="#00f0ff" stroke-width="1" />
+    <circle cx="745" cy="-4" r="3" fill="#00ff66" class="pulse-glow" />
+    <text x="754" y="-1" fill="#00ff66" class="matrix-meta">SYNC: 99.4% [STABLE]</text>
+  </g>
+
+  <!-- Horizontal Tech Separator -->
+  <line x1="24" y1="52" x2="876" y2="52" stroke="#1f2947" stroke-width="1" />
+  <line x1="24" y1="52" x2="220" y2="52" stroke="#00f0ff" stroke-width="1.5" opacity="0.8" />
+  <line x1="720" y1="52" x2="876" y2="52" stroke="#ff0055" stroke-width="1.5" opacity="0.8" />
+
+  <!-- ================================================================= -->
+  <!-- COLUMN 1 (LEFT): FRONTEND, TYPESCRIPT, UI/UX ARCHITECTURE -->
+  <!-- ================================================================= -->
+  <g transform="translate(26, 68)">
+    <!-- SKILL 01: ANGULAR & WEB ARCHITECTURE (96%) -->
+    <g transform="translate(0, 0)">
+      <!-- Label Row -->
+      <polygon points="0,0 36,0 42,14 0,14" fill="#ff0055" />
+      <text x="6" y="10.5" fill="#ffffff" class="matrix-meta">01</text>
+      <text x="50" y="11" class="skill-name">ANGULAR &amp; REACTIVE ARCHITECTURE</text>
+      <text x="408" y="11" text-anchor="end" fill="#00f0ff" class="skill-pct">96%</text>
+
+      <!-- Details Subline -->
+      <text x="0" y="27" class="skill-sub">Signals • Standalone Components • RxJS • SSR • Router</text>
+
+      <!-- Energy Bar Track -->
+      <g transform="translate(0, 34)">
+        <rect x="0" y="0" width="408" height="8" rx="4" fill="#0c0e22" stroke="#1f2947" stroke-width="0.8" />
+        <!-- Filled Energy Segment (96% of 408 = 391.68) -->
+        <rect x="0" y="0" width="392" height="8" rx="4" fill="url(#barGradCyan)">
+          <animate attributeName="width" values="375;392;384;392" dur="3s" repeatCount="indefinite" />
+        </rect>
+        <circle cx="392" cy="4" r="5" fill="#ffffff" filter="url(#matrixGlow)">
+          <animate attributeName="cx" values="375;392;384;392" dur="3s" repeatCount="indefinite" />
+        </circle>
+      </g>
+    </g>
+
+    <!-- SKILL 02: TYPESCRIPT & SYSTEMS LOGIC (94%) -->
+    <g transform="translate(0, 64)">
+      <!-- Label Row -->
+      <polygon points="0,0 36,0 42,14 0,14" fill="#00f0ff" />
+      <text x="6" y="10.5" fill="#05060f" class="matrix-meta">02</text>
+      <text x="50" y="11" class="skill-name">TYPESCRIPT &amp; SYSTEMS LOGIC</text>
+      <text x="408" y="11" text-anchor="end" fill="#fcee0a" class="skill-pct">94%</text>
+
+      <!-- Details Subline -->
+      <text x="0" y="27" class="skill-sub">Strict Types • Generics • Design Patterns • ESNext • AST</text>
+
+      <!-- Energy Bar Track -->
+      <g transform="translate(0, 34)">
+        <rect x="0" y="0" width="408" height="8" rx="4" fill="#0c0e22" stroke="#1f2947" stroke-width="0.8" />
+        <!-- Filled Energy Segment (94% of 408 = 383.52) -->
+        <rect x="0" y="0" width="384" height="8" rx="4" fill="url(#barGradYellow)">
+          <animate attributeName="width" values="365;384;376;384" dur="2.7s" repeatCount="indefinite" />
+        </rect>
+        <circle cx="384" cy="4" r="5" fill="#ffffff" filter="url(#matrixGlow)">
+          <animate attributeName="cx" values="365;384;376;384" dur="2.7s" repeatCount="indefinite" />
+        </circle>
+      </g>
+    </g>
+
+    <!-- SKILL 03: UI/UX & CYBER INTERFACES (92%) -->
+    <g transform="translate(0, 128)">
+      <!-- Label Row -->
+      <polygon points="0,0 36,0 42,14 0,14" fill="#fcee0a" />
+      <text x="6" y="10.5" fill="#05060f" class="matrix-meta">03</text>
+      <text x="50" y="11" class="skill-name">UI/UX &amp; CYBERNETIC INTERFACES</text>
+      <text x="408" y="11" text-anchor="end" fill="#ff0055" class="skill-pct">92%</text>
+
+      <!-- Details Subline -->
+      <text x="0" y="27" class="skill-sub">Tailwind CSS • Responsive Layouts • SVG FX • Accessibility</text>
+
+      <!-- Energy Bar Track -->
+      <g transform="translate(0, 34)">
+        <rect x="0" y="0" width="408" height="8" rx="4" fill="#0c0e22" stroke="#1f2947" stroke-width="0.8" />
+        <!-- Filled Energy Segment (92% of 408 = 375.36) -->
+        <rect x="0" y="0" width="375" height="8" rx="4" fill="url(#barGradMagenta)">
+          <animate attributeName="width" values="358;375;368;375" dur="3.2s" repeatCount="indefinite" />
+        </rect>
+        <circle cx="375" cy="4" r="5" fill="#ffffff" filter="url(#matrixGlow)">
+          <animate attributeName="cx" values="358;375;368;375" dur="3.2s" repeatCount="indefinite" />
+        </circle>
+      </g>
+    </g>
+  </g>
+
+  <!-- Vertical Divider Between Columns -->
+  <line x1="450" y1="62" x2="450" y2="246" stroke="#1f2947" stroke-width="1" stroke-dasharray="4,4" />
+
+  <!-- ================================================================= -->
+  <!-- COLUMN 2 (RIGHT): BACKEND, CLOUD, DEVOPS PIPELINES -->
+  <!-- ================================================================= -->
+  <g transform="translate(468, 68)">
+    <!-- SKILL 04: NODE.JS & RESTful RUNTIMES (91%) -->
+    <g transform="translate(0, 0)">
+      <!-- Label Row -->
+      <polygon points="0,0 36,0 42,14 0,14" fill="#00ff66" />
+      <text x="6" y="10.5" fill="#05060f" class="matrix-meta">04</text>
+      <text x="50" y="11" class="skill-name">NODE.JS &amp; BACKEND RUNTIME</text>
+      <text x="408" y="11" text-anchor="end" fill="#00ff66" class="skill-pct">91%</text>
+
+      <!-- Details Subline -->
+      <text x="0" y="27" class="skill-sub">Express • RESTful APIs • Middleware • Auth JWT • PHP</text>
+
+      <!-- Energy Bar Track -->
+      <g transform="translate(0, 34)">
+        <rect x="0" y="0" width="408" height="8" rx="4" fill="#0c0e22" stroke="#1f2947" stroke-width="0.8" />
+        <!-- Filled Energy Segment (91% of 408 = 371.28) -->
+        <rect x="0" y="0" width="371" height="8" rx="4" fill="url(#barGradCyan)">
+          <animate attributeName="width" values="350;371;362;371" dur="2.9s" repeatCount="indefinite" />
+        </rect>
+        <circle cx="371" cy="4" r="5" fill="#ffffff" filter="url(#matrixGlow)">
+          <animate attributeName="cx" values="350;371;362;371" dur="2.9s" repeatCount="indefinite" />
+        </circle>
+      </g>
+    </g>
+
+    <!-- SKILL 05: FIREBASE & DATA ENGINE (89%) -->
+    <g transform="translate(0, 64)">
+      <!-- Label Row -->
+      <polygon points="0,0 36,0 42,14 0,14" fill="#fcee0a" />
+      <text x="6" y="10.5" fill="#05060f" class="matrix-meta">05</text>
+      <text x="50" y="11" class="skill-name">FIREBASE &amp; CLOUD DATA ENGINE</text>
+      <text x="408" y="11" text-anchor="end" fill="#fcee0a" class="skill-pct">89%</text>
+
+      <!-- Details Subline -->
+      <text x="0" y="27" class="skill-sub">Firestore • Cloud Auth • MySQL • MongoDB • Hosting</text>
+
+      <!-- Energy Bar Track -->
+      <g transform="translate(0, 34)">
+        <rect x="0" y="0" width="408" height="8" rx="4" fill="#0c0e22" stroke="#1f2947" stroke-width="0.8" />
+        <!-- Filled Energy Segment (89% of 408 = 363.12) -->
+        <rect x="0" y="0" width="363" height="8" rx="4" fill="url(#barGradYellow)">
+          <animate attributeName="width" values="344;363;354;363" dur="3.1s" repeatCount="indefinite" />
+        </rect>
+        <circle cx="363" cy="4" r="5" fill="#ffffff" filter="url(#matrixGlow)">
+          <animate attributeName="cx" values="344;363;354;363" dur="3.1s" repeatCount="indefinite" />
+        </circle>
+      </g>
+    </g>
+
+    <!-- SKILL 06: DEVOPS & CI/CD AUTOMATION (88%) -->
+    <g transform="translate(0, 128)">
+      <!-- Label Row -->
+      <polygon points="0,0 36,0 42,14 0,14" fill="#ff0055" />
+      <text x="6" y="10.5" fill="#ffffff" class="matrix-meta">06</text>
+      <text x="50" y="11" class="skill-name">GIT PIPELINES &amp; DEVOPS TOOLING</text>
+      <text x="408" y="11" text-anchor="end" fill="#ff0055" class="skill-pct">88%</text>
+
+      <!-- Details Subline -->
+      <text x="0" y="27" class="skill-sub">GitHub Actions • Docker • Workflows • Linux • Postman</text>
+
+      <!-- Energy Bar Track -->
+      <g transform="translate(0, 34)">
+        <rect x="0" y="0" width="408" height="8" rx="4" fill="#0c0e22" stroke="#1f2947" stroke-width="0.8" />
+        <!-- Filled Energy Segment (88% of 408 = 359.04) -->
+        <rect x="0" y="0" width="359" height="8" rx="4" fill="url(#barGradMagenta)">
+          <animate attributeName="width" values="338;359;350;359" dur="2.8s" repeatCount="indefinite" />
+        </rect>
+        <circle cx="359" cy="4" r="5" fill="#ffffff" filter="url(#matrixGlow)">
+          <animate attributeName="cx" values="338;359;350;359" dur="2.8s" repeatCount="indefinite" />
+        </circle>
+      </g>
+    </g>
+  </g>
+</svg>

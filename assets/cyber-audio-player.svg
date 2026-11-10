@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" width="100%" height="120">
+  <defs>
+    <!-- Player Background Gradient -->
+    <linearGradient id="audioBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05060f" />
+      <stop offset="50%" stop-color="#090b1c" />
+      <stop offset="100%" stop-color="#0e1026" />
+    </linearGradient>
+
+    <!-- Glowing Cyber Border Gradient -->
+    <linearGradient id="audioBorderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff0055" stop-opacity="0.9" />
+      <stop offset="35%" stop-color="#7928ca" stop-opacity="0.6" />
+      <stop offset="70%" stop-color="#00f0ff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#fcee0a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Equalizer Spectrum Gradient (Cyan to Yellow to Magenta) -->
+    <linearGradient id="eqGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="55%" stop-color="#fcee0a" />
+      <stop offset="85%" stop-color="#ff0055" />
+    </linearGradient>
+
+    <!-- Progress Bar Gradient -->
+    <linearGradient id="progGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="60%" stop-color="#7928ca" />
+      <stop offset="100%" stop-color="#ff0055" />
+    </linearGradient>
+
+    <!-- Disc Glow -->
+    <filter id="neonGlowAudio" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Subtle Tech Grid -->
+    <pattern id="audioGrid" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M 18 0 L 0 0 0 18" fill="none" stroke="#00f0ff" stroke-width="0.5" stroke-opacity="0.05" />
+    </pattern>
+
+    <!-- Diagonal Caution Stripes -->
+    <pattern id="audioCaution" width="10" height="10" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#fcee0a" stroke-width="2.5" stroke-opacity="0.8" />
+      <line x1="5" y1="0" x2="5" y2="10" stroke="#05060f" stroke-width="2.5" stroke-opacity="0.8" />
+    </pattern>
+  </defs>
+
+  <style>
+    .audio-title {
+      font-family: 'Century Gothic', 'Trebuchet MS', 'Segoe UI', system-ui, sans-serif;
+      font-weight: 900;
+      font-size: 15px;
+      letter-spacing: 2px;
+      fill: #ffffff;
+    }
+    .audio-artist {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      fill: #00f0ff;
+    }
+    .audio-meta {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+    }
+    .audio-time {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      fill: #94a3b8;
+    }
+    .pulse-dot {
+      animation: pulseAudio 1.8s infinite ease-in-out;
+    }
+    @keyframes pulseAudio {
+      0% { opacity: 0.3; }
+      50% { opacity: 1; }
+      100% { opacity: 0.3; }
+    }
+  </style>
+
+  <!-- Container Box with Chamfered Corners -->
+  <polygon points="18,4 882,4 896,18 896,102 882,116 18,116 4,102 4,18" fill="url(#audioBg)" stroke="url(#audioBorderGrad)" stroke-width="1.3" />
+
+  <!-- Inner Cyber Grid Overlay -->
+  <polygon points="18,4 882,4 896,18 896,102 882,116 18,116 4,102 4,18" fill="url(#audioGrid)" />
+
+  <!-- Left Caution Stripe Accent -->
+  <polygon points="4,18 4,48 12,40 12,18" fill="url(#audioCaution)" />
+
+  <!-- Left Vinyl / Cyber Hologram Disc Art -->
+  <g transform="translate(58, 60)">
+    <!-- Rotating Cyber Cassette Disc -->
+    <circle cx="0" cy="0" r="34" fill="#0b0d1e" stroke="#ff0055" stroke-width="1.2" />
+    <circle cx="0" cy="0" r="26" fill="none" stroke="#00f0ff" stroke-width="0.8" stroke-dasharray="6,3" />
+    <circle cx="0" cy="0" r="17" fill="none" stroke="#fcee0a" stroke-width="0.8" />
+    <circle cx="0" cy="0" r="9" fill="#ff0055" filter="url(#neonGlowAudio)" />
+    <circle cx="0" cy="0" r="3" fill="#ffffff" />
+    <!-- Tone Arm Pin -->
+    <line x1="-3" y1="-14" x2="18" y2="12" stroke="#00f0ff" stroke-width="1.2" opacity="0.8" />
+  </g>
+
+  <!-- Center Content: Track Info & Playback Stream -->
+  <g transform="translate(112, 24)">
+    <!-- Top Stream Badge -->
+    <polygon points="0,-8 190,-8 198,8 0,8" fill="#ff0055" />
+    <text x="10" y="3.5" fill="#ffffff" class="audio-meta">RADIO // NEURAL_FM [98.4]</text>
+    
+    <circle cx="225" cy="0" r="3" fill="#00ff66" class="pulse-dot" />
+    <text x="236" y="3.5" fill="#00ff66" class="audio-meta">DEEP_FOCUS // 128 BPM</text>
+
+    <!-- Track Title -->
+    <text x="0" y="36" class="audio-title">NIGHT CITY CHILLWAVE // CODE HORIZON</text>
+
+    <!-- Artist & Session Info -->
+    <text x="0" y="54" class="audio-artist">
+      <tspan fill="#00f0ff">ARTIST:</tspan> Juan Carlos Dorado <tspan fill="#64748b">•</tspan> <tspan fill="#fcee0a">GENRE:</tspan> Cyberpunk Synthwave <tspan fill="#64748b">•</tspan> <tspan fill="#cbd5e1">ENV:</tspan> Angular Signals Focus
+    </text>
+
+    <!-- Progress Bar -->
+    <g transform="translate(0, 68)">
+      <rect x="0" y="0" width="450" height="5" rx="2.5" fill="#141732" />
+      <rect x="0" y="0" width="310" height="5" rx="2.5" fill="url(#progGrad)" filter="url(#neonGlowAudio)" />
+      <!-- Playhead Dot -->
+      <circle cx="310" cy="2.5" r="4.5" fill="#ffffff" stroke="#ff0055" stroke-width="1.5" />
+      <!-- Timestamps -->
+      <text x="0" y="16" class="audio-time">02:38</text>
+      <text x="450" y="16" text-anchor="end" class="audio-time">03:45</text>
+    </g>
+  </g>
+
+  <!-- Right Section: 14-Band Animated Spectrum Equalizer -->
+  <g transform="translate(680, 26)">
+    <!-- Spectrum Label -->
+    <text x="180" y="4" text-anchor="end" fill="#64748b" class="audio-meta">SPECTRUM // REALTIME</text>
+
+    <!-- 14 Equalizer Bars with Baseline at Y=58 -->
+    <g transform="translate(18, 12)">
+      <!-- Bar 1 -->
+      <rect x="0" y="24" width="6" height="34" rx="2" fill="url(#eqGrad)">
+        <animate attributeName="height" values="16;42;22;48;18;34;16" dur="1.2s" repeatCount="indefinite" />
+        <animate attributeName="y" values="42;16;36;10;40;24;42" dur="1.2s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- Bar 2 -->
+      <rect x="11" y="18" width="6" height="40" rx="2" fill="url(#eqGrad)">
+        <animate attributeName="height" values="32;14;44;20;46;28;32" dur="1.1s" repeatCount="indefinite" />
+        <animate attributeName="y" values="26;44;14;38;12;30;26" dur="1.1s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- Bar 3 -->
+      <rect x="22" y="30" width="6" height="28" rx="2" fill="url(#eqGrad)">
+        <animate attributeName="height" values="20;48;14;38;24;46;20" dur="1.35s" repeatCount="indefinite" />
+        <animate attributeName="y" values="38;10;44;20;34;12;38" dur="1.35s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- Bar 4 -->
+      <rect x="33" y="14" width="6" height="44" rx="2" fill="url(#eqGrad)">
+        <animate attributeName="height" values="44;22;52;16;40;30;44" dur="1.05s" repeatCount="indefinite" />
+        <animate attributeName="y" values="14;36;6;42;18;28;14" dur="1.05s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- Bar 5 -->
+      <rect x="44" y="22" width="6" height="36" rx="2" fill="url(#eqGrad)">
+        <animate attributeName="height" values="14;36;20;48;30;18;14" dur="1.25s" repeatCount="indefinite" />
+        <animate attributeName="y" values="44;22;38;10;28;40;44" dur="1.25s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- Bar 6 -->
+      <rect x="55" y="8" width="6" height="50" rx="2" fill="url(#eqGrad)">
+        <animate attributeName="height" values="48;28;54;22;46;34;48" dur="1.15s" repeatCount="indefinite" />
+        <animate attributeName="y" values="10;30;4;36;12;24;10" dur="1.15s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- Bar 7 -->
+      <rect x="66" y="28" width="6" height="30" rx="2" fill="url(#eqGrad)">
+        <animate attributeName="height" values="24;50;18;42;26;48;24" dur="1.4s" repeatCount="indefinite" />
+        <animate attributeName="y" values="34;8;40;16;32;10;34" dur="1.4s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- Bar 8 -->
+      <rect x="77" y="16" width="6" height="42" rx="2" fill="url(#eqGrad)">
+        <animate attributeName="height" values="40;18;48;24;52;30;40" dur="1.18s" repeatCount="indefinite" />
+        <animate attributeName="y" values="18;40;10;34;6;28;18" dur="1.18s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- Bar 9 -->
+      <rect x="88" y="20" width="6" height="38" rx="2" fill="url(#eqGrad)">
+        <animate attributeName="height" values="28;44;16;50;22;38;28" dur="1.3s" repeatCount="indefinite" />
+        <animate attributeName="y" values="30;14;42;8;36;20;30" dur="1.3s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- Bar 10 -->
+      <rect x="99" y="12" width="6" height="46" rx="2" fill="url(#eqGrad)">
+        <animate attributeName="height" values="46;24;52;18;42;28;46" dur="1.22s" repeatCount="indefinite" />
+        <animate attributeName="y" values="12;34;6;40;16;30;12" dur="1.22s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- Bar 11 -->
+      <rect x="110" y="26" width="6" height="32" rx="2" fill="url(#eqGrad)">
+        <animate attributeName="height" values="18;42;24;46;14;36;18" dur="1.28s" repeatCount="indefinite" />
+        <animate attributeName="y" values="40;16;34;12;44;22;40" dur="1.28s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- Bar 12 -->
+      <rect x="121" y="14" width="6" height="44" rx="2" fill="url(#eqGrad)">
+        <animate attributeName="height" values="38;20;48;26;50;32;38" dur="1.12s" repeatCount="indefinite" />
+        <animate attributeName="y" values="20;38;10;32;8;26;20" dur="1.12s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- Bar 13 -->
+      <rect x="132" y="28" width="6" height="30" rx="2" fill="url(#eqGrad)">
+        <animate attributeName="height" values="22;46;14;38;26;42;22" dur="1.45s" repeatCount="indefinite" />
+        <animate attributeName="y" values="36;12;44;20;32;16;36" dur="1.45s" repeatCount="indefinite" />
+      </rect>
+
+      <!-- Bar 14 -->
+      <rect x="143" y="20" width="6" height="38" rx="2" fill="url(#eqGrad)">
+        <animate attributeName="height" values="14;36;22;44;18;30;14" dur="1.32s" repeatCount="indefinite" />
+        <animate attributeName="y" values="44;22;36;14;40;28;44" dur="1.32s" repeatCount="indefinite" />
+      </rect>
+    </g>
+
+    <!-- Bottom Audio Controls HUD -->
+    <g transform="translate(18, 80)">
+      <!-- Controls -->
+      <text x="0" y="0" fill="#00f0ff" class="audio-meta">|◀◀</text>
+      <text x="35" y="0" fill="#fcee0a" class="audio-meta">▶❚❚</text>
+      <text x="70" y="0" fill="#00f0ff" class="audio-meta">▶▶|</text>
+      <text x="175" y="0" text-anchor="end" fill="#cbd5e1" class="audio-time">VOL // 92%</text>
+    </g>
+  </g>
+
+  <!-- Right Corner Sci-Fi Brackets -->
+  <g stroke="#00f0ff" stroke-width="1.3" fill="none" opacity="0.6">
+    <path d="M 890 14 L 890 26 L 878 26" />
+    <path d="M 10 102 L 10 90 L 22 90" />
+  </g>
+</svg>
