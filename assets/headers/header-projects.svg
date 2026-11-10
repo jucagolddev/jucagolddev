@@ -1,73 +1,86 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 52" width="100%" height="52">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 56" width="100%" height="56">
   <defs>
-    <linearGradient id="headBg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0e1020" stop-opacity="0.95" />
-      <stop offset="60%" stop-color="#070812" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#05050b" stop-opacity="0" />
+    <linearGradient id="headBgProj" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0c1626" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#070c18" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#04050a" stop-opacity="0.8" />
     </linearGradient>
 
-    <linearGradient id="headLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="laserBarProj" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00f0ff" />
-      <stop offset="45%" stop-color="#fcee0a" />
-      <stop offset="85%" stop-color="#ff0055" />
-      <stop offset="100%" stop-color="#ff0055" stop-opacity="0" />
+      <stop offset="40%" stop-color="#ff0055" />
+      <stop offset="80%" stop-color="#fcee0a" />
+      <stop offset="100%" stop-color="#fcee0a" stop-opacity="0" />
     </linearGradient>
 
-    <filter id="headGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
+    <filter id="laserGlowProj" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
+
+    <pattern id="headGridProj" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M 16 0 L 0 0 0 16" fill="none" stroke="#00f0ff" stroke-width="0.5" stroke-opacity="0.08" />
+    </pattern>
   </defs>
 
   <style>
     .title-hud {
-      font-family: 'Orbitron', 'Rajdhani', 'Fira Code', 'Courier New', monospace, sans-serif;
+      font-family: 'Orbitron', 'Rajdhani', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       font-weight: 800;
-      font-size: 16px;
+      font-size: 15px;
       letter-spacing: 2.5px;
       fill: #ffffff;
     }
     .tag-hud {
-      font-family: 'Fira Code', 'JetBrains Mono', monospace;
+      font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
       font-weight: 800;
       font-size: 11px;
       letter-spacing: 1.5px;
       fill: #05050b;
     }
     .meta-hud {
-      font-family: 'Fira Code', 'Courier New', monospace;
+      font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace;
       font-size: 10px;
-      letter-spacing: 1px;
-      fill: #00f0ff;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      fill: #ff0055;
+    }
+    .pulse-dot {
+      animation: pulseProj 1.8s infinite ease-in-out;
+    }
+    @keyframes pulseProj {
+      0% { opacity: 0.3; }
+      50% { opacity: 0.3; }
+      100% { opacity: 0.3; }
     }
   </style>
 
-  <!-- Background Ribbon with Angled End -->
-  <polygon points="5,4 780,4 820,48 5,48" fill="url(#headBg)" stroke="#00f0ff" stroke-width="0.8" stroke-opacity="0.3" />
+  <!-- Outer Chamfered Container -->
+  <polygon points="6,6 840,6 876,50 6,50" fill="url(#headBgProj)" stroke="#00f0ff" stroke-width="1.2" stroke-opacity="0.45" />
+  <polygon points="6,6 840,6 876,50 6,50" fill="url(#headGridProj)" />
 
-  <!-- Accent Bottom Cyber Bar -->
-  <line x1="5" y1="48" x2="840" y2="48" stroke="url(#headLineGrad)" stroke-width="2.5" filter="url(#headGlow)" />
+  <!-- Bottom Accent Laser Line -->
+  <line x1="6" y1="50" x2="880" y2="50" stroke="url(#laserBarProj)" stroke-width="2.5" filter="url(#laserGlowProj)" />
 
-  <!-- Cyan Index Tag Box -->
-  <polygon points="12,12 165,12 175,40 12,40" fill="#00f0ff" />
-  <text x="22" y="29" class="tag-hud">OPERATIONS // 03</text>
+  <!-- Cyan Index Tag Box with Chamfered Edge -->
+  <polygon points="14,12 165,12 177,44 14,44" fill="#00f0ff" />
+  <text x="24" y="32" class="tag-hud">OPERATIONS // 03</text>
 
-  <!-- Vector Icon: Rocket / Deployment Beacon -->
-  <g transform="translate(192, 16)" stroke="#fcee0a" stroke-width="1.6" fill="none">
+  <!-- Rocket / Cloud Deployment Beacon Icon -->
+  <g transform="translate(196, 17)" stroke="#00f0ff" stroke-width="1.6" fill="none">
     <path d="M 11 2 C 7 7 4 12 4 18 L 18 18 C 18 12 15 7 11 2 Z" stroke="#00f0ff" />
     <circle cx="11" cy="11" r="2.5" fill="#ff0055" />
     <path d="M 7 18 L 4 22" stroke="#ff0055" />
     <path d="M 15 18 L 18 22" stroke="#ff0055" />
   </g>
 
-  <!-- Title Text -->
-  <text x="230" y="30" class="title-hud">PROYECTOS DESTACADOS EN PRODUCCIÓN</text>
+  <!-- Main Section Title -->
+  <text x="234" y="33" class="title-hud">PROYECTOS DESTACADOS EN PRODUCCIÓN</text>
 
-  <!-- Right Meta Telemetry Tag -->
-  <text x="750" y="30" class="meta-hud" text-anchor="end">// DEPLOYED_TO_CLOUD</text>
-  <circle cx="765" cy="26" r="3.5" fill="#ff0055" />
+  <!-- Right Meta Telemetry Tag with Glowing Dot -->
+  <text x="800" y="32" class="meta-hud" text-anchor="end">// CLOUD_PROD</text>
+  <circle cx="816" cy="28" r="3.5" fill="#ff0055" class="pulse-dot" />
 </svg>
-

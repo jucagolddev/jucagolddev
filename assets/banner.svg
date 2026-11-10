@@ -1,183 +1,209 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250" width="100%" height="250">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 270" width="100%" height="270">
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="cyberBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#05050b" />
-      <stop offset="50%" stop-color="#090a14" />
-      <stop offset="100%" stop-color="#0e0f1e" />
+      <stop offset="0%" stop-color="#04050b" />
+      <stop offset="45%" stop-color="#080914" />
+      <stop offset="85%" stop-color="#0c0d1e" />
+      <stop offset="100%" stop-color="#05050c" />
     </linearGradient>
 
-    <!-- Cyberpunk Night City Glowing Title Gradient -->
-    <linearGradient id="nightCityGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Glowing Cyberpunk Gradient for Outer Frame -->
+    <linearGradient id="frameNeonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.9" />
+      <stop offset="35%" stop-color="#7928ca" stop-opacity="0.6" />
+      <stop offset="70%" stop-color="#ff0055" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#fcee0a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Animated Night City Title Gradient -->
+    <linearGradient id="titleCyberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00f0ff" />
-      <stop offset="35%" stop-color="#fcee0a" />
+      <stop offset="30%" stop-color="#fcee0a" />
       <stop offset="70%" stop-color="#ff0055" />
       <stop offset="100%" stop-color="#00f0ff" />
-      <animate attributeName="x1" from="0%" to="100%" dur="8s" repeatCount="indefinite" />
-      <animate attributeName="x2" from="100%" to="200%" dur="8s" repeatCount="indefinite" />
+      <animate attributeName="x1" from="0%" to="100%" dur="10s" repeatCount="indefinite" />
+      <animate attributeName="x2" from="100%" to="200%" dur="10s" repeatCount="indefinite" />
     </linearGradient>
 
-    <!-- Neon Glow Filter -->
-    <filter id="neonCyan" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
+    <!-- Glass Chip Gradient -->
+    <linearGradient id="chipBgGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#111326" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#090a16" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Neon Glow Ambient Filters -->
+    <filter id="neonOrbCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
     </filter>
 
-    <filter id="neonPink" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="4" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
+    <filter id="neonOrbPink" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
     </filter>
 
     <!-- HUD Grid Pattern -->
-    <pattern id="cyberGrid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#00f0ff" stroke-width="0.7" stroke-opacity="0.08" />
-      <rect x="0" y="0" width="1.5" height="1.5" fill="#fcee0a" opacity="0.25" />
+    <pattern id="cyberGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#00f0ff" stroke-width="0.6" stroke-opacity="0.06" />
+      <rect x="0" y="0" width="1.2" height="1.2" fill="#fcee0a" opacity="0.18" />
     </pattern>
 
-    <!-- Caution Diagonal Stripes -->
-    <pattern id="cautionStripes" width="14" height="14" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
-      <line x1="0" y1="0" x2="0" y2="14" stroke="#fcee0a" stroke-width="4" stroke-opacity="0.8" />
-      <line x1="7" y1="0" x2="7" y2="14" stroke="#05050b" stroke-width="4" stroke-opacity="0.8" />
+    <!-- Caution Diagonal Stripes Pattern -->
+    <pattern id="cautionStripes" width="12" height="12" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#fcee0a" stroke-width="3.5" stroke-opacity="0.85" />
+      <line x1="6" y1="0" x2="6" y2="12" stroke="#05050b" stroke-width="3.5" stroke-opacity="0.85" />
     </pattern>
-
-    <linearGradient id="hudChipGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#121324" stop-opacity="0.95" />
-      <stop offset="100%" stop-color="#080812" stop-opacity="0.9" />
-    </linearGradient>
   </defs>
 
   <style>
     .title-cyber {
-      font-family: 'Orbitron', 'Rajdhani', 'Impact', 'Fira Code', 'Courier New', monospace, sans-serif;
+      font-family: 'Century Gothic', 'Trebuchet MS', 'Segoe UI', system-ui, -apple-system, sans-serif;
       font-weight: 900;
       font-size: 38px;
-      letter-spacing: 5px;
+      letter-spacing: 6px;
     }
-    .hud-label {
-      font-family: 'Fira Code', 'JetBrains Mono', 'Courier New', monospace;
+    .hud-meta {
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', 'Fira Code', monospace;
+      font-size: 10.5px;
       font-weight: 700;
-      font-size: 11px;
-      letter-spacing: 2px;
+      letter-spacing: 1.5px;
     }
     .sub-role {
-      font-family: 'Fira Code', 'Courier New', monospace;
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', 'Fira Code', monospace;
       font-size: 13px;
       font-weight: 700;
       letter-spacing: 2px;
     }
     .chip-text {
-      font-family: 'Fira Code', 'JetBrains Mono', monospace;
+      font-family: 'Cascadia Code', 'Consolas', 'JetBrains Mono', 'Fira Code', monospace;
       font-size: 11px;
       font-weight: 700;
-      letter-spacing: 1px;
+      letter-spacing: 1.2px;
     }
     .pulse-dot {
-      animation: pulseAnim 1.8s infinite ease-in-out;
+      animation: pulseLight 1.8s infinite ease-in-out;
     }
-    @keyframes pulseAnim {
-      0% { opacity: 0.3; r: 3; }
-      50% { opacity: 1; r: 4.5; }
-      100% { opacity: 0.3; r: 3; }
+    @keyframes pulseLight {
+      0% { opacity: 0.3; }
+      50% { opacity: 0.3; }
+      100% { opacity: 0.3; }
     }
   </style>
 
-  <!-- Base Night City Container with Chamfered Corners -->
-  <path d="M 30 5 L 870 5 L 895 30 L 895 220 L 870 245 L 30 245 L 5 220 L 5 30 Z" fill="url(#cyberBg)" stroke="#00f0ff" stroke-width="1.5" stroke-opacity="0.4" />
+  <!-- Outer HUD Container with Chamfered Corners -->
+  <polygon points="32,6 868,6 894,32 894,238 868,264 32,264 6,238 6,32" fill="url(#cyberBg)" stroke="url(#frameNeonGrad)" stroke-width="1.6" />
 
-  <!-- Inner Cyber Grid -->
-  <path d="M 30 5 L 870 5 L 895 30 L 895 220 L 870 245 L 30 245 L 5 220 L 5 30 Z" fill="url(#cyberGrid)" />
+  <!-- Inner Cyber Grid Overlay -->
+  <polygon points="32,6 868,6 894,32 894,238 868,264 32,264 6,238 6,32" fill="url(#cyberGrid)" />
 
-  <!-- Top Caution Stripe Decal (Left & Right) -->
-  <polygon points="5,30 5,65 14,56 14,30" fill="url(#cautionStripes)" />
-  <polygon points="895,190 895,220 886,220 886,199" fill="url(#cautionStripes)" />
+  <!-- Ambient Light Orbs -->
+  <circle cx="120" cy="70" r="100" fill="#00f0ff" opacity="0.08" filter="url(#neonOrbCyan)" />
+  <circle cx="780" cy="180" r="100" fill="#ff0055" opacity="0.08" filter="url(#neonOrbPink)" />
+  <circle cx="450" cy="130" r="70" fill="#fcee0a" opacity="0.03" />
 
-  <!-- Cyberpunk Night City Ambient Orbs -->
-  <circle cx="140" cy="70" r="100" fill="#00f0ff" opacity="0.09" filter="url(#neonCyan)" />
-  <circle cx="760" cy="160" r="110" fill="#ff0055" opacity="0.1" filter="url(#neonPink)" />
-  <circle cx="450" cy="115" r="70" fill="#fcee0a" opacity="0.04" />
+  <!-- Top-Left & Bottom-Right Caution Decals -->
+  <polygon points="6,32 6,65 14,57 14,32" fill="url(#cautionStripes)" />
+  <polygon points="894,205 894,238 886,238 886,213" fill="url(#cautionStripes)" />
 
-  <!-- High-Tech Corner Brackets -->
-  <g stroke="#ff0055" stroke-width="2.5" fill="none" opacity="0.85">
-    <path d="M 10 45 L 10 20 L 35 20" />
-    <path d="M 890 205 L 890 230 L 865 230" />
+  <!-- Sci-Fi Corner Brackets with Telemetry Coordinates -->
+  <g stroke="#00f0ff" stroke-width="2" fill="none" opacity="0.85">
+    <path d="M 12 50 L 12 24 L 38 24" />
+    <path d="M 888 220 L 888 246 L 862 246" />
   </g>
-  <g stroke="#00f0ff" stroke-width="2.5" fill="none" opacity="0.85">
-    <path d="M 890 45 L 890 20 L 865 20" />
-    <path d="M 10 205 L 10 230 L 35 230" />
-  </g>
-
-  <!-- Top Telemetry & Netrunner Badge -->
-  <g transform="translate(450, 42)">
-    <!-- Yellow Caution Pill with Angled Edge -->
-    <polygon points="-170,-13 155,-13 170,13 -155,13" fill="#080812" stroke="#fcee0a" stroke-width="1.2" />
-    <circle cx="-142" cy="0" r="4" fill="#fcee0a" class="pulse-dot" />
-    <text x="-128" y="4" fill="#fcee0a" class="hud-label">NETRUNNER // ING. INFORMÁTICA // ACTIVE</text>
+  <g stroke="#ff0055" stroke-width="2" fill="none" opacity="0.85">
+    <path d="M 888 50 L 888 24 L 862 24" />
+    <path d="M 12 220 L 12 246 L 38 246" />
   </g>
 
-  <!-- Main Cyber Title with Dual Glitch Shadow -->
-  <g transform="translate(450, 108)">
-    <!-- Cyan Glitch Offset -->
-    <text x="-2" y="2" text-anchor="middle" fill="#00f0ff" opacity="0.5" class="title-cyber">JUAN CARLOS DORADO</text>
-    <!-- Magenta Glitch Offset -->
-    <text x="2" y="-1" text-anchor="middle" fill="#ff0055" opacity="0.5" class="title-cyber">JUAN CARLOS DORADO</text>
-    <!-- Main Glowing Text -->
-    <text x="0" y="0" text-anchor="middle" fill="url(#nightCityGrad)" class="title-cyber">JUAN CARLOS DORADO</text>
+  <!-- Corner Crosshairs / Reticles -->
+  <g stroke="#fcee0a" stroke-width="1" opacity="0.6">
+    <line x1="48" y1="20" x2="48" y2="28" />
+    <line x1="44" y1="24" x2="52" y2="24" />
+    <line x1="852" y1="242" x2="852" y2="250" />
+    <line x1="848" y1="246" x2="856" y2="246" />
   </g>
 
-  <!-- Subtitle with HUD Syntax -->
-  <g transform="translate(450, 145)">
+  <!-- Top HUD Status Bar -->
+  <!-- Left ID -->
+  <g transform="translate(36, 32)">
+    <circle cx="0" cy="0" r="3" fill="#00f0ff" class="pulse-dot" />
+    <text x="12" y="3.5" fill="#67e8f9" class="hud-meta">SYS_ID // JUCAGOLDDEV [V4.8]</text>
+  </g>
+
+  <!-- Center Status Pill -->
+  <g transform="translate(450, 32)">
+    <polygon points="-140,-12 125,-12 140,12 -125,12" fill="#0a0c18" stroke="#fcee0a" stroke-width="1.3" />
+    <circle cx="-110" cy="0" r="3.5" fill="#fcee0a" class="pulse-dot" />
+    <text x="-98" y="3.5" fill="#fcee0a" class="hud-meta">NETRUNNER // ING. INFORMÁTICA</text>
+  </g>
+
+  <!-- Right Geo Telemetry -->
+  <g transform="translate(864, 32)">
+    <text x="-12" y="3.5" text-anchor="end" fill="#f43f5e" class="hud-meta">LOC // SEVILLA.ES [37.18°N]</text>
+    <circle cx="0" cy="0" r="3" fill="#ff0055" class="pulse-dot" />
+  </g>
+
+  <!-- Main Hero Title with Holographic Chromatic Aberration -->
+  <g transform="translate(450, 114)">
+    <!-- Cyan Aberration Stroke -->
+    <text x="-1.5" y="1" text-anchor="middle" fill="none" stroke="#00f0ff" stroke-width="1.2" opacity="0.75" class="title-cyber">JUAN CARLOS DORADO</text>
+    <!-- Magenta Aberration Stroke -->
+    <text x="1.5" y="-1" text-anchor="middle" fill="none" stroke="#ff0055" stroke-width="1.2" opacity="0.75" class="title-cyber">JUAN CARLOS DORADO</text>
+    <!-- Main Solid Gradient Text -->
+    <text x="0" y="0" text-anchor="middle" fill="url(#titleCyberGrad)" class="title-cyber">JUAN CARLOS DORADO</text>
+  </g>
+
+  <!-- Subtitle Bar with HUD Delimiters -->
+  <g transform="translate(450, 154)">
+    <!-- Decorative Bracket Lines -->
+    <line x1="-380" y1="-4" x2="-260" y2="-4" stroke="#ff0055" stroke-width="1.2" opacity="0.6" />
+    <line x1="260" y1="-4" x2="380" y2="-4" stroke="#ff0055" stroke-width="1.2" opacity="0.6" />
+    
     <text x="0" y="0" text-anchor="middle" class="sub-role">
       <tspan fill="#ff0055">//</tspan>
       <tspan fill="#00f0ff"> WEB ARCHITECT </tspan>
-      <tspan fill="#fcee0a">&bull;</tspan>
+      <tspan fill="#fcee0a">•</tspan>
       <tspan fill="#ffffff"> ANGULAR SPECIALIST </tspan>
-      <tspan fill="#fcee0a">&bull;</tspan>
+      <tspan fill="#fcee0a">•</tspan>
       <tspan fill="#00f0ff"> FULL-STACK REACTIVE </tspan>
       <tspan fill="#ff0055">//</tspan>
     </text>
   </g>
 
-  <!-- Cyber Chips / Tech Modules -->
-  <g transform="translate(450, 200)">
-    <!-- Angular (Magenta Neon) -->
-    <g transform="translate(-270, 0)">
-      <polygon points="-52,-14 46,-14 54,14 -44,14" fill="url(#hudChipGrad)" stroke="#ff0055" stroke-width="1.2" />
-      <circle cx="-32" cy="0" r="3" fill="#ff0055" />
-      <text x="-20" y="4" fill="#ff99bb" class="chip-text">ANGULAR</text>
+  <!-- Bottom Silicon Tech Modules / Chips -->
+  <g transform="translate(450, 212)">
+    <!-- Module 1: Angular (Magenta Neon) -->
+    <g transform="translate(-280, 0)">
+      <polygon points="-58,-15 50,-15 60,15 -48,15" fill="url(#chipBgGrad)" stroke="#ff0055" stroke-width="1.3" />
+      <circle cx="-38" cy="0" r="3" fill="#ff0055" />
+      <text x="-24" y="4" fill="#fda4af" class="chip-text">ANGULAR 19+</text>
     </g>
 
-    <!-- TypeScript (Cyan Neon) -->
-    <g transform="translate(-135, 0)">
-      <polygon points="-56,-14 50,-14 58,14 -48,14" fill="url(#hudChipGrad)" stroke="#00f0ff" stroke-width="1.2" />
-      <circle cx="-34" cy="0" r="3" fill="#00f0ff" />
-      <text x="-22" y="4" fill="#a5f3fc" class="chip-text">TYPESCRIPT</text>
+    <!-- Module 2: TypeScript (Electric Cyan) -->
+    <g transform="translate(-140, 0)">
+      <polygon points="-58,-15 50,-15 60,15 -48,15" fill="url(#chipBgGrad)" stroke="#00f0ff" stroke-width="1.3" />
+      <circle cx="-38" cy="0" r="3" fill="#00f0ff" />
+      <text x="-24" y="4" fill="#a5f3fc" class="chip-text">TYPESCRIPT</text>
     </g>
 
-    <!-- Signals / RxJS (Cyber Yellow) -->
+    <!-- Module 3: Signals & RxJS (Cyber Yellow) -->
     <g transform="translate(10, 0)">
-      <polygon points="-64,-14 56,-14 64,14 -56,14" fill="url(#hudChipGrad)" stroke="#fcee0a" stroke-width="1.2" />
-      <circle cx="-40" cy="0" r="3" fill="#fcee0a" />
-      <text x="-28" y="4" fill="#fef08a" class="chip-text">SIGNALS // RXJS</text>
+      <polygon points="-68,-15 60,-15 70,15 -58,15" fill="url(#chipBgGrad)" stroke="#fcee0a" stroke-width="1.3" />
+      <circle cx="-44" cy="0" r="3" fill="#fcee0a" />
+      <text x="-30" y="4" fill="#fef08a" class="chip-text">SIGNALS // RXJS</text>
     </g>
 
-    <!-- Firebase (Orange/Magenta) -->
-    <g transform="translate(155, 0)">
-      <polygon points="-52,-14 44,-14 52,14 -44,14" fill="url(#hudChipGrad)" stroke="#ff0055" stroke-width="1.2" />
-      <circle cx="-30" cy="0" r="3" fill="#ff0055" />
-      <text x="-18" y="4" fill="#fda4af" class="chip-text">FIREBASE</text>
+    <!-- Module 4: Firebase Cloud (Magenta/Rose) -->
+    <g transform="translate(162, 0)">
+      <polygon points="-58,-15 50,-15 60,15 -48,15" fill="url(#chipBgGrad)" stroke="#ff0055" stroke-width="1.3" />
+      <circle cx="-38" cy="0" r="3" fill="#ff0055" />
+      <text x="-24" y="4" fill="#fda4af" class="chip-text">FIREBASE CLOUD</text>
     </g>
 
-    <!-- Node / API (Cyan Neon) -->
-    <g transform="translate(280, 0)">
-      <polygon points="-50,-14 42,-14 50,14 -42,14" fill="url(#hudChipGrad)" stroke="#00f0ff" stroke-width="1.2" />
-      <circle cx="-28" cy="0" r="3" fill="#00f0ff" />
-      <text x="-16" y="4" fill="#a5f3fc" class="chip-text">NODE // REST</text>
+    <!-- Module 5: Node.js & REST (Electric Cyan) -->
+    <g transform="translate(295, 0)">
+      <polygon points="-56,-15 48,-15 58,15 -46,15" fill="url(#chipBgGrad)" stroke="#00f0ff" stroke-width="1.3" />
+      <circle cx="-36" cy="0" r="3" fill="#00f0ff" />
+      <text x="-22" y="4" fill="#a5f3fc" class="chip-text">NODE // REST</text>
     </g>
   </g>
 </svg>
