@@ -35,13 +35,13 @@ jobs:
       - name: Generate 3D isometric contribution graph
         uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
       - name: Generate live engineering telemetry SVGs
         run: node scripts/generate-profile-metrics.js
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
           GITHUB_USERNAME: ${{ github.repository_owner }}
 
       - name: Commit updated visuals and telemetry

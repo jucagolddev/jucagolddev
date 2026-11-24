@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 206" width="900" height="206">
+  <defs>
+    <linearGradient id="stackBgLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FAFBFC" />
+      <stop offset="100%" stop-color="#F1F5F9" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    .sans {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Helvetica, Arial, sans-serif;
+    }
+    .mono {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, ui-monospace, monospace;
+    }
+  </style>
+
+  <!-- Outer Frame -->
+  <rect x="1" y="1" width="898" height="204" rx="14" fill="url(#stackBgLight)" stroke="#D0D7DE" stroke-width="1" />
+
+  <!-- COLUMN 1: FRONTEND & GRAPHICS -->
+  <g transform="translate(24, 19)">
+    <rect x="0" y="0" width="272" height="168" rx="10" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1" />
+    <circle cx="18" cy="21" r="3.5" fill="#0284C7" />
+    <text x="28" y="24.5" fill="#475569" class="mono" font-size="10.5" font-weight="700" letter-spacing="0.6">FRONTEND &amp; GRAPHICS</text>
+    <line x1="14" y1="35" x2="258" y2="35" stroke="#E2E8F0" stroke-width="1" />
+
+    <g class="sans" font-size="11" font-weight="600">
+      <g transform="translate(14, 46)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#DD0031" />
+        <text x="20" y="16.5" fill="#1E293B">Angular 19+</text>
+      </g>
+      <g transform="translate(140, 46)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#3178C6" />
+        <text x="20" y="16.5" fill="#1E293B">TypeScript</text>
+      </g>
+
+      <g transform="translate(14, 78)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#D81B60" />
+        <text x="20" y="16.5" fill="#1E293B">Signals &amp; RxJS</text>
+      </g>
+      <g transform="translate(140, 78)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#0284C7" />
+        <text x="20" y="16.5" fill="#1E293B">Three.js</text>
+      </g>
+
+      <g transform="translate(14, 110)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#D97706" />
+        <text x="20" y="16.5" fill="#1E293B">Canvas 2D</text>
+      </g>
+      <g transform="translate(140, 110)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#0891B2" />
+        <text x="20" y="16.5" fill="#1E293B">Tailwind CSS</text>
+      </g>
+
+      <g transform="translate(14, 142)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#C6538C" />
+        <text x="20" y="16.5" fill="#1E293B">SCSS / CSS3</text>
+      </g>
+      <g transform="translate(140, 142)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#16A34A" />
+        <text x="20" y="16.5" fill="#1E293B">WCAG 2.1 AA</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- COLUMN 2: BACKEND & DATA -->
+  <g transform="translate(314, 19)">
+    <rect x="0" y="0" width="272" height="168" rx="10" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1" />
+    <circle cx="18" cy="21" r="3.5" fill="#4F46E5" />
+    <text x="28" y="24.5" fill="#475569" class="mono" font-size="10.5" font-weight="700" letter-spacing="0.6">BACKEND &amp; DATA</text>
+    <line x1="14" y1="35" x2="258" y2="35" stroke="#E2E8F0" stroke-width="1" />
+
+    <g class="sans" font-size="11" font-weight="600">
+      <g transform="translate(14, 46)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#16A34A" />
+        <text x="20" y="16.5" fill="#1E293B">Node.js</text>
+      </g>
+      <g transform="translate(140, 46)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#64748B" />
+        <text x="20" y="16.5" fill="#1E293B">Express</text>
+      </g>
+
+      <g transform="translate(14, 78)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#D97706" />
+        <text x="20" y="16.5" fill="#1E293B">Firebase</text>
+      </g>
+      <g transform="translate(140, 78)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#336791" />
+        <text x="20" y="16.5" fill="#1E293B">PostgreSQL</text>
+      </g>
+
+      <g transform="translate(14, 110)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#00758F" />
+        <text x="20" y="16.5" fill="#1E293B">MySQL</text>
+      </g>
+      <g transform="translate(140, 110)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#059669" />
+        <text x="20" y="16.5" fill="#1E293B">MongoDB</text>
+      </g>
+
+      <g transform="translate(14, 142)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#B07219" />
+        <text x="20" y="16.5" fill="#1E293B">Java / REST</text>
+      </g>
+      <g transform="translate(140, 142)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#4F46E5" />
+        <text x="20" y="16.5" fill="#1E293B">PHP · C#</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- COLUMN 3: ARCHITECTURE & DEVOPS -->
+  <g transform="translate(604, 19)">
+    <rect x="0" y="0" width="272" height="168" rx="10" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1" />
+    <circle cx="18" cy="21" r="3.5" fill="#D97706" />
+    <text x="28" y="24.5" fill="#475569" class="mono" font-size="10.5" font-weight="700" letter-spacing="0.6">ARCHITECTURE &amp; DEVOPS</text>
+    <line x1="14" y1="35" x2="258" y2="35" stroke="#E2E8F0" stroke-width="1" />
+
+    <g class="sans" font-size="11" font-weight="600">
+      <g transform="translate(14, 46)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#0284C7" />
+        <text x="20" y="16.5" fill="#1E293B">Clean Arch</text>
+      </g>
+      <g transform="translate(140, 46)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#4F46E5" />
+        <text x="20" y="16.5" fill="#1E293B">DDD &amp; IoC</text>
+      </g>
+
+      <g transform="translate(14, 78)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#EA580C" />
+        <text x="20" y="16.5" fill="#1E293B">Git &amp; GitHub</text>
+      </g>
+      <g transform="translate(140, 78)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#2088FF" />
+        <text x="20" y="16.5" fill="#1E293B">GH Actions</text>
+      </g>
+
+      <g transform="translate(14, 110)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#0284C7" />
+        <text x="20" y="16.5" fill="#1E293B">Docker</text>
+      </g>
+      <g transform="translate(140, 110)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#D97706" />
+        <text x="20" y="16.5" fill="#1E293B">Linux</text>
+      </g>
+
+      <g transform="translate(14, 142)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#65A30D" />
+        <text x="20" y="16.5" fill="#1E293B">Vitest / QA</text>
+      </g>
+      <g transform="translate(140, 142)">
+        <rect x="0" y="0" width="118" height="26" rx="6" fill="#F8FAFC" stroke="#D0D7DE" stroke-width="1" />
+        <circle cx="10" cy="13" r="2.8" fill="#9333EA" />
+        <text x="20" y="16.5" fill="#1E293B">Figma UI</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 32" width="124" height="32">
+  <rect x="0.5" y="0.5" width="123" height="31" rx="8" fill="#111824" stroke="#263042" stroke-width="1" />
+  <g transform="translate(12, 8.5)" fill="#F0F6FC">
+    <path d="M12.6 1h2.2l-4.8 5.5 5.6 7.5h-4.4l-3.4-4.5-3.9 4.5H1.7l5.1-5.9L1.4 1h4.5l3.1 4.1L12.6 1Zm-.8 11.7h1.2L5.3 2.2H4l7.8 10.5Z" transform="scale(0.95)" />
+  </g>
+  <text x="34" y="20" fill="#E2E8F0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif" font-size="12" font-weight="600">X / Twitter</text>
+</svg>

@@ -9,16 +9,35 @@
 
   <p align="center">
     <a href="https://porfolio-juancarlosdoradolopez.web.app/" target="_blank">
-      <img src="https://img.shields.io/badge/Portfolio_3D-0F172A?style=flat-square&logo=googlechrome&logoColor=38BDF8" alt="Portfolio 3D" />
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="./assets/buttons/portfolio-dark.svg" />
+        <source media="(prefers-color-scheme: light)" srcset="./assets/buttons/portfolio-light.svg" />
+        <img src="./assets/buttons/portfolio-dark.svg" height="32" alt="Portfolio 3D" />
+      </picture>
     </a>
+    &nbsp;
     <a href="https://linkedin.com/in/jucagolddev" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-0F172A?style=flat-square&logo=linkedin&logoColor=38BDF8" alt="LinkedIn" />
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="./assets/buttons/linkedin-dark.svg" />
+        <source media="(prefers-color-scheme: light)" srcset="./assets/buttons/linkedin-light.svg" />
+        <img src="./assets/buttons/linkedin-dark.svg" height="32" alt="LinkedIn" />
+      </picture>
     </a>
+    &nbsp;
     <a href="https://x.com/JucaGoldDev" target="_blank">
-      <img src="https://img.shields.io/badge/X_%2F_Twitter-0F172A?style=flat-square&logo=x&logoColor=F8FAFC" alt="X / Twitter" />
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="./assets/buttons/x-dark.svg" />
+        <source media="(prefers-color-scheme: light)" srcset="./assets/buttons/x-light.svg" />
+        <img src="./assets/buttons/x-dark.svg" height="32" alt="X / Twitter" />
+      </picture>
     </a>
+    &nbsp;
     <a href="mailto:jucagolddev@gmail.com">
-      <img src="https://img.shields.io/badge/Email-0F172A?style=flat-square&logo=gmail&logoColor=F59E0B" alt="Email" />
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="./assets/buttons/email-dark.svg" />
+        <source media="(prefers-color-scheme: light)" srcset="./assets/buttons/email-light.svg" />
+        <img src="./assets/buttons/email-dark.svg" height="32" alt="Email" />
+      </picture>
     </a>
   </p>
 </div>
@@ -81,11 +100,13 @@ Desarrollador de Aplicaciones Web (**DAW**) y estudiante de Grado en Ingeniería
 
 ### Stack Técnico por Capas
 
-| Capa | Tecnologías |
-| :--- | :--- |
-| **Frontend & Gráficos** | <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=angular,ts,js,rxjs,threejs,tailwind,sass,html,css&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=angular,ts,js,rxjs,threejs,tailwind,sass,html,css&theme=light" /><img src="https://skillicons.dev/icons?i=angular,ts,js,rxjs,threejs,tailwind,sass,html,css&theme=dark" alt="Frontend y Gráficos" height="36" /></picture> |
-| **Backend & Datos** | <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nodejs,express,java,php,cs,firebase,postgres,mysql,mongodb&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=nodejs,express,java,php,cs,firebase,postgres,mysql,mongodb&theme=light" /><img src="https://skillicons.dev/icons?i=nodejs,express,java,php,cs,firebase,postgres,mysql,mongodb&theme=dark" alt="Backend y Datos" height="36" /></picture> |
-| **DevOps, Testing & Diseño** | <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git,github,githubactions,docker,linux,vitest,figma,vscode&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=git,github,githubactions,docker,linux,vitest,figma,vscode&theme=light" /><img src="https://skillicons.dev/icons?i=git,github,githubactions,docker,linux,vitest,figma,vscode&theme=dark" alt="DevOps, Testing y Diseño" height="36" /></picture> |
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/stack-light.svg" />
+    <img src="./assets/stack-dark.svg" width="100%" alt="Stack técnico por capas: Frontend y Gráficos, Backend y Datos, Arquitectura y DevOps" />
+  </picture>
+</div>
 
 ---
 
@@ -105,9 +126,9 @@ Desarrollador de Aplicaciones Web (**DAW**) y estudiante de Grado en Ingeniería
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-view.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-green.svg" />
     <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-season-animate.svg" />
-    <img src="./profile-3d-contrib/profile-night-view.svg" width="100%" alt="Mapa isométrico 3D de contribuciones en GitHub" />
+    <img src="./profile-3d-contrib/profile-night-green.svg" width="100%" alt="Mapa isométrico 3D de contribuciones en GitHub" />
   </picture>
 
   <br/>

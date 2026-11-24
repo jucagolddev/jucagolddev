@@ -421,14 +421,16 @@ function renderTelemetrySvg(metrics, themeMode) {
     })
     .join('\n        ');
 
-  const kpi4Sub = metrics.hasActiveDaysMetric
-    ? `${metrics.activeDays12w} active days (84d)`
-    : `${metrics.activeDays12w} active days (last 12w)`;
+  const total12w = metrics.weeklyVelocity.reduce((acc, v) => acc + v, 0);
+  const kpi4Sub = `${formatNumber(total12w)} contribs (last 12w)`;
 
-  const kpi1Sub =
-    metrics.commitsCount !== null && metrics.prsCount !== null
-      ? `${formatNumber(metrics.commitsCount)} commits · ${formatNumber(metrics.prsCount)} PRs`
-      : 'Commits, PRs & reviews';
+  let kpi1Sub = 'Public commits & reviews';
+  if (metrics.commitsCount !== null && metrics.prsCount !== null) {
+    kpi1Sub =
+      metrics.prsCount > 0
+        ? `${formatNumber(metrics.commitsCount)} commits · ${formatNumber(metrics.prsCount)} PRs`
+        : `${formatNumber(metrics.commitsCount)} public commits (12m)`;
+  }
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 252" width="900" height="252">
   <defs>
