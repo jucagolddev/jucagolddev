@@ -37,7 +37,7 @@
   <!-- Top Telemetry Header Bar -->
   <circle cx="30" cy="27" r="3.5" fill="#16A34A" class="pulse" />
   <text x="42" y="31" fill="#0F172A" class="mono" font-size="11" font-weight="700" letter-spacing="0.8">LIVE ENGINEERING TELEMETRY <tspan fill="#64748B" font-weight="500" letter-spacing="0">· @jucagolddev</tspan></text>
-  <text x="876" y="31" text-anchor="end" fill="#64748B" class="mono" font-size="10.5">Synced 24/11/2026 15:17 CET · GitHub Actions</text>
+  <text x="876" y="31" text-anchor="end" fill="#64748B" class="mono" font-size="10.5">Synced 24/11/2026 15:18 CET · GitHub Actions</text>
 
   <line x1="24" y1="45" x2="876" y2="45" stroke="#E2E8F0" stroke-width="1" />
 
@@ -49,8 +49,8 @@
       <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm7-3.25v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5a.75.75 0 0 1 1.5 0Z" transform="scale(0.82)" />
     </g>
     <text x="32" y="25" fill="#475569" class="sans" font-size="11" font-weight="600">Contributions (12m)</text>
-    <text x="14" y="55" fill="#0F172A" class="sans" font-size="23" font-weight="800">229</text>
-    <text x="14" y="71" fill="#64748B" class="mono" font-size="10">Commits, PRs &amp; reviews</text>
+    <text x="14" y="55" fill="#0F172A" class="sans" font-size="23" font-weight="800">230</text>
+    <text x="14" y="71" fill="#64748B" class="mono" font-size="10">205 commits · 0 PRs</text>
   </g>
 
   <!-- KPI 2: Original Repos -->
@@ -82,8 +82,8 @@
       <path d="M9.504.43a1.516 1.516 0 0 1 2.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.249 1.249 0 0 1-.871.354h-.302a1.25 1.25 0 0 1-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004Z" transform="scale(0.82)" />
     </g>
     <text x="32" y="25" fill="#475569" class="sans" font-size="11" font-weight="600">12-Week Velocity</text>
-    <text x="14" y="55" fill="#0F172A" class="sans" font-size="21" font-weight="800">8 / wk peak</text>
-    <text x="14" y="71" fill="#64748B" class="mono" font-size="10">4 active days (last 12w)</text>
+    <text x="14" y="55" fill="#0F172A" class="sans" font-size="21" font-weight="800">18 / wk peak</text>
+    <text x="14" y="71" fill="#64748B" class="mono" font-size="10">5 active days (84d)</text>
   </g>
 
   <!-- RIGHT COLUMN: STACKED ANALYTICS PANELS (x=452..876, width 424) -->
@@ -95,44 +95,44 @@
     <!-- Segmented Language Bar -->
     <g transform="translate(16, 29)" clip-path="url(#langBarClip_light)">
       <rect x="0" y="0" width="392" height="8" fill="#E2E8F0" />
-      <rect x="0.00" y="0" width="124.08" height="8" fill="#3178C6" />
-          <rect x="124.08" y="0" width="97.95" height="8" fill="#F1E05A" />
-          <rect x="222.03" y="0" width="67.39" height="8" fill="#C6538C" />
-          <rect x="289.42" y="0" width="49.17" height="8" fill="#E34C26" />
-          <rect x="338.58" y="0" width="31.09" height="8" fill="#563D7C" />
-          <rect x="369.68" y="0" width="22.32" height="8" fill="#8B949E" />
+      <rect x="0.00" y="0" width="108.18" height="8" fill="#3178C6" />
+          <rect x="108.18" y="0" width="97.62" height="8" fill="#F1E05A" />
+          <rect x="205.79" y="0" width="62.81" height="8" fill="#C6538C" />
+          <rect x="268.60" y="0" width="58.04" height="8" fill="#E34C26" />
+          <rect x="326.63" y="0" width="30.76" height="8" fill="#563D7C" />
+          <rect x="357.39" y="0" width="34.61" height="8" fill="#8B949E" />
     </g>
 
     <!-- Legend (2 rows x 3 cols) -->
     <g transform="translate(16, 52)">
         <circle cx="4" cy="-3.5" r="3.5" fill="#3178C6" />
         <text x="13" y="0" fill="#0F172A" class="sans" font-size="10.5" font-weight="600">TypeScript</text>
-        <text x="116" y="0" text-anchor="end" fill="#64748B" class="mono" font-size="10">31.7%</text>
+        <text x="116" y="0" text-anchor="end" fill="#64748B" class="mono" font-size="10">27.6%</text>
       </g>
       <g transform="translate(152, 52)">
         <circle cx="4" cy="-3.5" r="3.5" fill="#F1E05A" />
         <text x="13" y="0" fill="#0F172A" class="sans" font-size="10.5" font-weight="600">JavaScript</text>
-        <text x="116" y="0" text-anchor="end" fill="#64748B" class="mono" font-size="10">25.0%</text>
+        <text x="116" y="0" text-anchor="end" fill="#64748B" class="mono" font-size="10">24.9%</text>
       </g>
       <g transform="translate(288, 52)">
         <circle cx="4" cy="-3.5" r="3.5" fill="#C6538C" />
         <text x="13" y="0" fill="#0F172A" class="sans" font-size="10.5" font-weight="600">SCSS</text>
-        <text x="116" y="0" text-anchor="end" fill="#64748B" class="mono" font-size="10">17.2%</text>
+        <text x="116" y="0" text-anchor="end" fill="#64748B" class="mono" font-size="10">16.0%</text>
       </g>
       <g transform="translate(16, 70)">
         <circle cx="4" cy="-3.5" r="3.5" fill="#E34C26" />
         <text x="13" y="0" fill="#0F172A" class="sans" font-size="10.5" font-weight="600">HTML</text>
-        <text x="116" y="0" text-anchor="end" fill="#64748B" class="mono" font-size="10">12.5%</text>
+        <text x="116" y="0" text-anchor="end" fill="#64748B" class="mono" font-size="10">14.8%</text>
       </g>
       <g transform="translate(152, 70)">
         <circle cx="4" cy="-3.5" r="3.5" fill="#563D7C" />
         <text x="13" y="0" fill="#0F172A" class="sans" font-size="10.5" font-weight="600">CSS</text>
-        <text x="116" y="0" text-anchor="end" fill="#64748B" class="mono" font-size="10">7.9%</text>
+        <text x="116" y="0" text-anchor="end" fill="#64748B" class="mono" font-size="10">7.8%</text>
       </g>
       <g transform="translate(288, 70)">
         <circle cx="4" cy="-3.5" r="3.5" fill="#8B949E" />
         <text x="13" y="0" fill="#0F172A" class="sans" font-size="10.5" font-weight="600">Other</text>
-        <text x="116" y="0" text-anchor="end" fill="#64748B" class="mono" font-size="10">5.7%</text>
+        <text x="116" y="0" text-anchor="end" fill="#64748B" class="mono" font-size="10">8.8%</text>
       </g>
   </g>
 
@@ -140,7 +140,7 @@
   <g transform="translate(452, 158)">
     <rect x="0" y="0" width="424" height="78" rx="10" fill="#FFFFFF" stroke="#D0D7DE" stroke-width="1" />
     <text x="16" y="19" fill="#475569" class="mono" font-size="10.5" font-weight="700" letter-spacing="0.6">12-WEEK CONTRIBUTION VELOCITY</text>
-    <text x="408" y="19" text-anchor="end" fill="#64748B" class="mono" font-size="10">Peak: 8 · Last 12w</text>
+    <text x="408" y="19" text-anchor="end" fill="#64748B" class="mono" font-size="10">Peak: 18 · Last 12w</text>
 
     <!-- Subtle Horizontal Guide Lines -->
     <line x1="16" y1="35" x2="408" y2="35" stroke="#CBD5E1" stroke-width="0.7" stroke-dasharray="2,3" opacity="0.65" />
@@ -148,12 +148,13 @@
     <line x1="16" y1="66" x2="408" y2="66" stroke="#CBD5E1" stroke-width="0.8" opacity="0.8" />
 
     <!-- Area + Polyline -->
-    <path d="M 16 66 L 51.6 62.1 L 87.3 66 L 122.9 66 L 158.5 66 L 194.2 66 L 229.8 66 L 265.5 66 L 301.1 66 L 336.7 35 L 372.4 54.4 L 408 62.1 L 408 66 L 16 66 Z" fill="url(#areaGrad_light)" />
-    <path d="M 16 66 L 51.6 62.1 L 87.3 66 L 122.9 66 L 158.5 66 L 194.2 66 L 229.8 66 L 265.5 66 L 301.1 66 L 336.7 35 L 372.4 54.4 L 408 62.1" fill="none" stroke="#0284C7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 16 35 L 51.6 66 L 87.3 66 L 122.9 66 L 158.5 66 L 194.2 66 L 229.8 66 L 265.5 66 L 301.1 66 L 336.7 40.2 L 372.4 62.6 L 408 64.3 L 408 66 L 16 66 Z" fill="url(#areaGrad_light)" />
+    <path d="M 16 35 L 51.6 66 L 87.3 66 L 122.9 66 L 158.5 66 L 194.2 66 L 229.8 66 L 265.5 66 L 301.1 66 L 336.7 40.2 L 372.4 62.6 L 408 64.3" fill="none" stroke="#0284C7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
 
     <!-- Data Nodes -->
-    <circle cx="16" cy="66" r="2" fill="#4F46E5" opacity="0.75" />
-        <circle cx="51.6" cy="62.1" r="2" fill="#4F46E5" opacity="0.75" />
+    <circle cx="16" cy="35" r="6.5" fill="#0284C7" opacity="0.22" />
+        <circle cx="16" cy="35" r="3.5" fill="#0284C7" stroke="#FFFFFF" stroke-width="1.5" />
+        <circle cx="51.6" cy="66" r="2" fill="#4F46E5" opacity="0.75" />
         <circle cx="87.3" cy="66" r="2" fill="#4F46E5" opacity="0.75" />
         <circle cx="122.9" cy="66" r="2" fill="#4F46E5" opacity="0.75" />
         <circle cx="158.5" cy="66" r="2" fill="#4F46E5" opacity="0.75" />
@@ -161,9 +162,8 @@
         <circle cx="229.8" cy="66" r="2" fill="#4F46E5" opacity="0.75" />
         <circle cx="265.5" cy="66" r="2" fill="#4F46E5" opacity="0.75" />
         <circle cx="301.1" cy="66" r="2" fill="#4F46E5" opacity="0.75" />
-        <circle cx="336.7" cy="35" r="6.5" fill="#0284C7" opacity="0.22" />
-        <circle cx="336.7" cy="35" r="3.5" fill="#0284C7" stroke="#FFFFFF" stroke-width="1.5" />
-        <circle cx="372.4" cy="54.4" r="2" fill="#4F46E5" opacity="0.75" />
-        <circle cx="408" cy="62.1" r="2" fill="#4F46E5" opacity="0.75" />
+        <circle cx="336.7" cy="40.2" r="2" fill="#4F46E5" opacity="0.75" />
+        <circle cx="372.4" cy="62.6" r="2" fill="#4F46E5" opacity="0.75" />
+        <circle cx="408" cy="64.3" r="2" fill="#4F46E5" opacity="0.75" />
   </g>
 </svg>
