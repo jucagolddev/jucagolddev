@@ -1,180 +1,126 @@
-<!-- =================================================================== -->
-<!-- HERO BANNER LOCAL // CYBERPUNK NIGHT CITY EDITION -->
-<!-- =================================================================== -->
 <div align="center">
-  <img src="https://raw.githubusercontent.com/jucagolddev/jucagolddev/refs/heads/main/assets/banner.svg" width="100%" alt="Juan Carlos Dorado López - Banner" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg" />
+    <img src="./assets/hero-dark.svg" width="100%" alt="Juan Carlos Dorado López — Frontend &amp; Full-Stack Software Engineer" />
+  </picture>
 
   <br/><br/>
 
-  <!-- SUBTÍTULO ANIMADO CON EFECTO TYPING (FIRA CODE // HUD SYNTAX) -->
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=20&duration=2400&pause=1000&color=00F0FF&center=true&vCenter=true&multiline=false&width=800&height=40&lines=%3E_%20Desarrollador%20Web%20%26%20Estudiante%201%C2%BA%20Ing.%20Inform%C3%A1tica;%2F%2F%20Arquitectura%20Angular%20%26%20Ecosistema%20TypeScript;%3E_%20Full-Stack%3A%20Node.js%2C%20Firebase%2C%20APIs%20REST%20%26%20UI;%2F%2F%20Base%20Operativa%3A%20Utrera%2C%20Sevilla%2C%20Espa%C3%B1a%20%5BES%5D" alt="Typing SVG" />
-  </a>
-
-  <br/>
-
   <p align="center">
-    <img src="./assets/cyber-identity-strip.svg" width="100%" alt="Cyberpunk Identity HUD Strip" />
-  </p>
-
-  <!-- BADGES DE CONTACTO Y TELEMETRÍA (NIGHT CITY COLOR PALETTE) -->
-  <p align="center">
-    <a href="https://linkedin.com/in/jucagolddev" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-00F0FF?style=for-the-badge&logo=linkedin&logoColor=05050b&labelColor=0e1020" alt="LinkedIn" />
-    </a>
     <a href="https://porfolio-juancarlosdoradolopez.web.app/" target="_blank">
-      <img src="https://img.shields.io/badge/Portfolio_Web-FF0055?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0e1020" alt="Portfolio" />
+      <img src="https://img.shields.io/badge/Portfolio_3D-0F172A?style=flat-square&logo=googlechrome&logoColor=38BDF8" alt="Portfolio 3D" />
     </a>
-    <a href="mailto:jucagolddev@gmail.com" target="_blank">
-      <img src="https://img.shields.io/badge/Comms_Email-FCEE0A?style=for-the-badge&logo=gmail&logoColor=05050b&labelColor=0e1020" alt="Gmail" />
+    <a href="https://linkedin.com/in/jucagolddev" target="_blank">
+      <img src="https://img.shields.io/badge/LinkedIn-0F172A?style=flat-square&logo=linkedin&logoColor=38BDF8" alt="LinkedIn" />
     </a>
-    <a href="https://github.com/jucagolddev?tab=followers" target="_blank">
-      <img src="https://img.shields.io/github/followers/jucagolddev?label=Followers&style=for-the-badge&logo=github&color=00F0FF&logoColor=00F0FF&labelColor=0e1020" alt="GitHub Followers" />
+    <a href="https://x.com/JucaGoldDev" target="_blank">
+      <img src="https://img.shields.io/badge/X_%2F_Twitter-0F172A?style=flat-square&logo=x&logoColor=F8FAFC" alt="X / Twitter" />
     </a>
-    <img src="https://komarev.com/ghpvc/?username=jucagolddev&label=Telemetry_Views&color=FCEE0A&style=for-the-badge&labelColor=0e1020" alt="Profile Views" />
-  </p>
-
-  <p align="center">
-    <img src="./assets/cyber-audio-player.svg" width="100%" alt="Cyberpunk Neural Radio Audio Player // Night City Synthwave" />
+    <a href="mailto:jucagolddev@gmail.com">
+      <img src="https://img.shields.io/badge/Email-0F172A?style=flat-square&logo=gmail&logoColor=F59E0B" alt="Email" />
+    </a>
   </p>
 </div>
 
-<p align="center">
-  <img src="./assets/divider.svg" width="100%" />
-</p>
+---
 
-<!-- =================================================================== -->
-<!-- SECTION 01: SYS_BIO // SOBRE MÍ & ENFOQUE TÉCNICO -->
-<!-- =================================================================== -->
-<img src="./assets/headers/header-about.svg" width="100%" alt="Sobre Mí &amp; Enfoque" />
+### Posicionamiento y Principios de Ingeniería
 
-<p align="center">
-  <img src="./assets/cyber-terminal.svg" width="100%" alt="Netrunner Interactive Terminal CLI" />
-</p>
+Desarrollador de Aplicaciones Web (**DAW**) y estudiante de Grado en Ingeniería Informática (**UBU**), especializado en arquitectura Frontend con **Angular & TypeScript**, sistemas Full-Stack y experiencias interactivas de alto rendimiento a 60 FPS. Combino el rigor estructural de **Clean Architecture / DDD** con una sólida base artística orientada al detalle en UI/UX.
 
-<p align="center">
-  <a href="https://porfolio-juancarlosdoradolopez.web.app/" target="_blank">
-    <img src="https://img.shields.io/badge/LAUNCH_PORTFOLIO-OPEN_WEB-FF0055?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0e1020" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="mailto:jucagolddev@gmail.com">
-    <img src="https://img.shields.io/badge/ESTABLISH_COMMS-EMAIL-00F0FF?style=for-the-badge&logo=gmail&logoColor=05050b&labelColor=0e1020" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/jucagolddev?tab=repositories" target="_blank">
-    <img src="https://img.shields.io/badge/EXPLORE_PROJECTS-GITHUB_REPOS-FCEE0A?style=for-the-badge&logo=github&logoColor=05050b&labelColor=0e1020" />
-  </a>
-</p>
+| Arquitectura & Estado | UI & Rendimiento | Full-Stack & Entrega |
+| :--- | :--- | :--- |
+| Separación estricta de capas (Dominio, Aplicación, Presentación), TypeScript estricto (`0% any`) y estado reactivo con **Angular Signals** y **RxJS**. | Sistemas de diseño escalables, renderizado GPU con **Three.js / WebGL** y Canvas 2D, accesibilidad **WCAG 2.1 AA** y budgets estrictos de bundle. | APIs RESTful con **Node.js / Express**, Java y PHP, bases de datos relacionales/NoSQL, Firebase y pipelines automatizados con **GitHub Actions**. |
 
-<p align="center">
-  <img src="./assets/divider.svg" width="100%" />
-</p>
+---
 
-<!-- =================================================================== -->
-<!-- SECTION 02: CYBER_ARSENAL // STACK TECNOLÓGICO -->
-<!-- =================================================================== -->
-<img src="./assets/headers/header-tech.svg" width="100%" alt="Stack Tecnológico" />
+### Proyectos Destacados
 
-<p align="center">
-  <img src="./assets/cyber-tech-arsenal.svg" width="100%" alt="Cyber Arsenal Tech Specifications Pods" />
-</p>
-
-<p align="center">
-  <img src="./assets/cyber-skills-matrix.svg" width="100%" alt="Cyberpunk Neural Competency Matrix" />
-</p>
-
-<p align="center">
-  <img src="./assets/divider.svg" width="100%" />
-</p>
-
-<!-- =================================================================== -->
-<!-- SECTION 03: OPERATIONS // PROYECTOS DESTACADOS -->
-<!-- =================================================================== -->
-<img src="./assets/headers/header-projects.svg" width="100%" alt="Proyectos Destacados" />
-
-<table width="100%" border="0" cellpadding="0" cellspacing="6">
+<table>
   <tr>
-    <td width="50%" align="center" valign="top">
-      <a href="https://github.com/jucagolddev/TiendaOnlineConApiRestYClienteHtml" target="_blank">
-        <img src="./assets/card-project-tienda.svg" width="100%" alt="Tienda Online // API REST &amp; Web Client" />
-      </a>
+    <td width="50%" valign="top">
+      <h4><a href="https://porfolio-juancarlosdoradolopez.web.app/">Portfolio Interactivo 3D</a></h4>
+      <p><code>Angular SSR</code> <code>Three.js</code> <code>TypeScript</code> <code>Firebase</code></p>
+      <p>Ecosistema web personal con mapa neural 3D interactivo en WebGL a 60 FPS, arquitectura limpia desacoplada, terminal CLI integrada, 105 tests y cumplimiento WCAG 2.1 AA (Lighthouse 99).</p>
     </td>
-    <td width="50%" align="center" valign="top">
-      <a href="https://porfolio-juancarlosdoradolopez.web.app/" target="_blank">
-        <img src="./assets/card-project-portfolio.svg" width="100%" alt="Portfolio Personal // Showcase Cloud" />
-      </a>
+    <td width="50%" valign="top">
+      <h4><a href="https://github.com/jucagolddev/CalculadoraVectores">VectorLab ℝ² (CalculadoraVectores)</a></h4>
+      <p><code>JavaScript ES+</code> <code>Canvas 2D</code> <code>KaTeX</code> <code>DDD + IoC</code></p>
+      <p>Calculadora y simulador gráfico interactivo de vectores en ℝ² estructurado con Clean Architecture / DDD e inversión de dependencias, modo ejercicios y resolución matemática paso a paso.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4><a href="https://github.com/jucagolddev/vacapp">Vacapp</a></h4>
+      <p><code>TypeScript</code> <code>Angular</code> <code>PWA Offline-First</code> <code>PL/pgSQL</code></p>
+      <p>Aplicación web progresiva de gestión ganadera con alta densidad de información, diseño de alto contraste para uso bajo luz solar y persistencia offline-first para entornos sin cobertura.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h4><a href="https://github.com/jucagolddev/CampusHub">CampusHub</a></h4>
+      <p><code>TypeScript</code> <code>Angular</code> <code>SCSS</code> <code>Full-Stack</code></p>
+      <p>Plataforma Full-Stack con cliente y servidor desacoplados para centralizar, gestionar y proyectar proyectos académicos con interfaz moderna basada en sistemas modulares.</p>
     </td>
   </tr>
 </table>
 
-<p align="center">
-  <img src="./assets/divider.svg" width="100%" />
-</p>
+<details>
+<summary>Ver más proyectos públicos y laboratorios</summary>
 
-<!-- =================================================================== -->
-<!-- SECTION 04: TELEMETRY // ESTADÍSTICAS Y RENDIMIENTO -->
-<!-- =================================================================== -->
-<img src="./assets/headers/header-telemetry.svg" width="100%" alt="Telemetría y Rendimiento" />
+| Proyecto | Stack | Descripción |
+| :--- | :--- | :--- |
+| **[Sonora](https://github.com/jucagolddev/Sonora)** | `Angular` `Node.js` `Express` `MySQL` | Plataforma web accesible (WCAG 2.1) para gestión, reproducción y compartición de recursos sonoros de alta fidelidad. |
+| **[JUCASHOP](https://github.com/jucagolddev/TiendaOnlineConApiRestYClienteHtml)** | `JavaScript` `PHP REST` `MySQL` `SCSS` | E-commerce Full-Stack construido desde cero sin frameworks, con consumo de API RESTful propia y carrito persistente en `LocalStorage`. |
+| **[Node ORM REST API](https://github.com/jucagolddev/Api_Rest_Node_ORM_Sequelize_DoradoLopezJuanCarlos)** | `Node.js` `Express` `Sequelize` | Servicio API RESTful con modelado relacional, validaciones y operaciones CRUD sobre ORM Sequelize. |
+| **[Gestión de Asignaturas REST](https://github.com/jucagolddev/GestionAsignaturasRest)** | `Java` `REST` | Servicio backend REST en Java para administración académica estructurada. |
+| **[MejorApp Releases](https://github.com/jucagolddev/mejorapp-releases)** | `Android` `Releases` | Canal público de distribución oficial de binarios e instaladores APK de MejorApp. |
 
-<p align="center">
-  <img src="./assets/cyber-status.svg" width="100%" alt="Cyber Telemetry Live Node.js Feed" />
-</p>
+</details>
 
-<p align="center">
-  <img src="./assets/cyber-stats-matrix.svg" width="100%" alt="Cyberpunk Stats &amp; Language Distribution Matrix" />
-</p>
+---
 
-<p align="center">
-  <img src="./assets/divider.svg" width="100%" />
-</p>
+### Stack Técnico por Capas
 
-<!-- =================================================================== -->
-<!-- SECTION 05: NEURAL_GRID // ACTIVIDAD ISOMÉTRICA 3D -->
-<!-- =================================================================== -->
-<img src="./assets/headers/header-activity.svg" width="100%" alt="Actividad Isométrica 3D" />
+| Capa | Tecnologías |
+| :--- | :--- |
+| **Frontend & Gráficos** | <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=angular,ts,js,rxjs,threejs,tailwind,sass,html,css&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=angular,ts,js,rxjs,threejs,tailwind,sass,html,css&theme=light" /><img src="https://skillicons.dev/icons?i=angular,ts,js,rxjs,threejs,tailwind,sass,html,css&theme=dark" alt="Frontend y Gráficos" height="36" /></picture> |
+| **Backend & Datos** | <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=nodejs,express,java,php,cs,firebase,postgres,mysql,mongodb&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=nodejs,express,java,php,cs,firebase,postgres,mysql,mongodb&theme=light" /><img src="https://skillicons.dev/icons?i=nodejs,express,java,php,cs,firebase,postgres,mysql,mongodb&theme=dark" alt="Backend y Datos" height="36" /></picture> |
+| **DevOps, Testing & Diseño** | <picture><source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=git,github,githubactions,docker,linux,vitest,figma,vscode&theme=dark" /><source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=git,github,githubactions,docker,linux,vitest,figma,vscode&theme=light" /><img src="https://skillicons.dev/icons?i=git,github,githubactions,docker,linux,vitest,figma,vscode&theme=dark" alt="DevOps, Testing y Diseño" height="36" /></picture> |
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-rainbow.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-season-animate.svg">
-    <img alt="Gráfico 3D de Contribuciones" src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%">
-  </picture>
-</p>
+---
 
-<!-- =================================================================== -->
-<!-- SECTION 06: RUNNER // AUTÓMATA SNAKE DE COMMITS -->
-<!-- =================================================================== -->
-<img src="./assets/headers/header-snake.svg" width="100%" alt="Autómata Snake" />
+### Telemetría de Ingeniería en Vivo
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jucagolddev/jucagolddev/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jucagolddev/jucagolddev/output/github-contribution-grid-snake.svg">
-    <img alt="Snake animada de commits" src="https://raw.githubusercontent.com/jucagolddev/jucagolddev/output/github-contribution-grid-snake.svg" width="100%">
-  </picture>
-</p>
-
-<p align="center">
-  <img src="./assets/divider.svg" width="100%" />
-</p>
-
-<!-- =================================================================== -->
-<!-- FOOTER // COMMS CHANNEL -->
-<!-- =================================================================== -->
 <div align="center">
-  <p>
-    <a href="mailto:jucagolddev@gmail.com">
-      <img src="https://img.shields.io/badge/TRANSMIT_MESSAGE-jucagolddev%40gmail.com-00F0FF?style=for-the-badge&logo=gmail&logoColor=05050b&labelColor=0e1020" alt="Transmit Message" />
-    </a>
-    &nbsp;&nbsp;
-    <a href="https://linkedin.com/in/jucagolddev" target="_blank">
-      <img src="https://img.shields.io/badge/NEURAL_NETWORK-LINKEDIN-FF0055?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0e1020" alt="LinkedIn" />
-    </a>
-  </p>
-
-  <p align="center">
-    <a href="mailto:jucagolddev@gmail.com">
-      <img src="./assets/cyber-footer.svg" width="100%" alt="Cyberpunk Netrunner Signature &amp; Security Termination Footer" />
-    </a>
-  </p>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/telemetry-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/telemetry-light.svg" />
+    <img src="./assets/telemetry-dark.svg" width="100%" alt="Telemetría en vivo de ingeniería de GitHub" />
+  </picture>
 </div>
+
+---
+
+### Actividad de Contribuciones
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night-view.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./profile-3d-contrib/profile-season-animate.svg" />
+    <img src="./profile-3d-contrib/profile-night-view.svg" width="100%" alt="Mapa isométrico 3D de contribuciones en GitHub" />
+  </picture>
+
+  <br/>
+
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jucagolddev/jucagolddev/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jucagolddev/jucagolddev/output/github-contribution-grid-snake.svg" />
+    <img src="https://raw.githubusercontent.com/jucagolddev/jucagolddev/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Snake animada recorriendo el historial de contribuciones" />
+  </picture>
+</div>
+
+---
+
+<p align="center">
+  <sub>Juan Carlos Dorado López · <a href="mailto:jucagolddev@gmail.com">jucagolddev@gmail.com</a> · <a href="https://porfolio-juancarlosdoradolopez.web.app/">Portfolio 3D</a> · Métricas y gráficos actualizados automáticamente cada día vía GitHub Actions.</sub>
+</p>
